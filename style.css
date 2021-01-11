@@ -29,6 +29,13 @@ body>header>h1>a {
     font-weight: 400;
 }
 
+img {
+    border: 12px solid #fff;
+    border-radius: 4px;
+    box-shadow: 10px 10px 15px 10px silver;
+
+}
+
 article>header {}
 
 footer {
@@ -39,7 +46,6 @@ a {
     color: rgb(158, 27, 27);
     text-decoration: none;
 }
- 
 
 /* 'Margin: 0 auto' centers block content on the page */
 

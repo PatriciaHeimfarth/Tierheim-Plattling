@@ -6,7 +6,11 @@
                     <header>
                         <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                     </header>
-                    <?php the_post_thumbnail('medium'); ?>
+                    <?php 
+                    add_image_size( 'single-feature', 400, 300, true );
+                    the_post_thumbnail('single-feature'); 
+                    
+                    ?>
                     <?php the_excerpt(); ?>
                 </article>
             <?php endwhile;
