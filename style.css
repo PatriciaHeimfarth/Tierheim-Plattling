@@ -119,15 +119,16 @@ a {
     background-color:lightgrey;
     width: 100%;
     height: auto;
-    display:grid;
+    display:table-row-group;
 }
 
 .animal-div>.animal-content-div{
     display: inline-block;
+    margin: auto;
 }
 
 .animal-div>.animal-content-div>img{
-    width: 35%;
+    width: 30%;
     height: auto;
   
 }
