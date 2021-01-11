@@ -140,6 +140,12 @@ a {
     border-radius: 10px;
 }
 
+.animal-div>.animal-content-div>button:hover{
+  
+    background-color: rgb(46, 45, 45);
+ 
+}
+
 
 @media screen and (max-width: 800px) {
     .article-loop {
