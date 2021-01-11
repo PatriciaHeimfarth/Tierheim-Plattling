@@ -39,6 +39,11 @@ main>section>h1 {
     text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
 }
 
+main>section>.animal-div>.animal-content-div>h2 {
+    color:gray;
+    text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
+}
+
 img {
     border: 12px solid #fff;
     border-radius: 4px;
@@ -49,8 +54,6 @@ img {
     width: 100%;
     height: auto;
 }
-
-article>header {}
 
 footer {
     margin-top: 4px;
@@ -112,6 +115,20 @@ a {
     margin-bottom: 12px;
 }
 
+.animal-div{
+    background-color:lightgrey;
+    width: 100%;
+    height: auto;
+}
+
+.animal-div>.animal-content-div{
+    display: inline-block;
+}
+
+.animal-div>.animal-content-div>img{
+    width: 25%;
+    height: auto;
+}
 @media screen and (max-width: 800px) {
     .article-loop {
         width: 99%;
