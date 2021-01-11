@@ -30,6 +30,11 @@ body>header>h1>a {
     font-weight: 400;
 }
 
+main>section>h1 {
+    color: gray;
+    text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
+}
+
 img {
     border: 12px solid #fff;
     border-radius: 4px;
@@ -96,7 +101,7 @@ a {
     vertical-align: top;
     background-color: #FFF;
     border-radius: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
 }
 
 @media screen and (max-width: 800px) {
