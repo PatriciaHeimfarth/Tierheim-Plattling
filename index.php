@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <main class="wrap">
     <section class="content-area content-thin">
+        <h1>Aktuelles</h1>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <article class="article-loop">
                     <header>

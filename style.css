@@ -14,6 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 body {
     background-color: #fafafa;
     font-family: Helvetica;
+    text-align: center;
 }
 
 .main-header, footer {
@@ -45,6 +46,7 @@ footer {
 a {
     color: rgb(158, 27, 27);
     text-decoration: none;
+    text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
 }
 
 /* 'Margin: 0 auto' centers block content on the page */
