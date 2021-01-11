@@ -119,6 +119,7 @@ a {
     background-color:lightgrey;
     width: 100%;
     height: auto;
+    display:grid;
 }
 
 .animal-div>.animal-content-div{
@@ -126,8 +127,9 @@ a {
 }
 
 .animal-div>.animal-content-div>img{
-    width: 25%;
+    width: 35%;
     height: auto;
+  
 }
 
 .animal-div>.animal-content-div>button{
