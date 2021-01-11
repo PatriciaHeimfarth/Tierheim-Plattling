@@ -26,16 +26,17 @@
             <div class="animal-content-div">
                 <h2>Unsere Hunde</h2>
                 <img src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
+                <button>Zu den Hunden</button>
             </div>
             <div class="animal-content-div">
                 <h2>Unsere Katzen</h2>
                 <img src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
-
+                <button>Zu den Katzen</button>
             </div>
             <div class="animal-content-div">
                 <h2>Unsere Kleintiere</h2>
                 <img src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
-
+                <button>Zu den Kleintieren</button>
             </div>
         </div>
     </section><?php get_sidebar(); ?>

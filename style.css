@@ -129,6 +129,13 @@ a {
     width: 25%;
     height: auto;
 }
+
+.animal-div>.animal-content-div>button{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+
 @media screen and (max-width: 800px) {
     .article-loop {
         width: 99%;
