@@ -25,6 +25,10 @@ body {
     border: 1px solid #78baff;
 }
 
+article>header {
+    text-align: center;
+}
+
 body>header>h1>a {
     color: #ffffff;
     font-weight: 400;
@@ -39,7 +43,11 @@ img {
     border: 12px solid #fff;
     border-radius: 4px;
     box-shadow: 10px 10px 15px 10px silver;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
 article>header {}
