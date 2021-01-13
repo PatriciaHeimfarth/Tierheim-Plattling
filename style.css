@@ -115,12 +115,7 @@ a {
     margin-bottom: 12px;
 }
 
-.animal-div{
-    background-color:lightgrey;
-    width: 100%;
-    height: auto;
-    display:table-row-group;
-}
+
 
 .animal-div>.animal-content-div{
     display: inline-block;
@@ -155,10 +150,42 @@ a {
     .article-loop {
         width: 99%;
     }
+    .animal-div{
+        background-color:lightgrey;
+        width: 100%;
+        height: auto;
+        display:table-row-group;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .content-area, .primary-sidebar {
         width: 100%;
+    }
+    .animal-div{
+        background-color:lightgrey;
+        width: 100%;
+        height: auto;
+        display:table-row-group;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+  
+    .animal-div{
+        background-color:lightgrey;
+        width: 100%;
+        height: auto;
+        display:table-row-group;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+   
+    .animal-div{
+        background-color:lightgrey;
+        width: 100%;
+        height: auto;
+        display:flex;
     }
 }
