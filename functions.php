@@ -27,3 +27,6 @@ function add_Main_Nav()
 add_action('init', 'add_Main_Nav');
 
 add_theme_support('post-thumbnails');
+
+/*custom post types*/
+require_once( 'post_types/animal.php' );
