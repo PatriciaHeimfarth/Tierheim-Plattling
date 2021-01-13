@@ -43,6 +43,11 @@
                 <img src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
                 <button>Zu den Vermittlungen</button>
             </div>
+            <div class="animal-content-div">
+                <h2>Hinweise zur Vermittlung</h2>
+                <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
+                <button>Zu den Hinweisen</button>
+            </div>
         </div>
     </section><?php get_sidebar(); ?>
 
