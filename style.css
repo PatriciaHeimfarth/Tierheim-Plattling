@@ -161,6 +161,18 @@ a {
     text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
 }
 
+.infotext-div{
+    width:100%;
+    height:500px;
+    margin-bottom: 5px;
+    background-color:lightgrey;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
+}
+
+
 
 @media screen and (max-width: 800px) {
     .article-loop {

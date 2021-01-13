@@ -53,6 +53,8 @@
             <h2>Helfen Sie uns!</h2>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .
         </div>
+        <div class="infotext-div"></div>
+        <div class="infotext-div"></div>
     </section><?php get_sidebar(); ?>
 
 </main>
