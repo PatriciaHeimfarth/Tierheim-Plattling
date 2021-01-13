@@ -172,7 +172,19 @@ a {
     text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
 }
 
+/*cats or dogs overview*/
 
+#animal-listing>a>img{
+    width:40%;
+    margin-top:100px;
+    box-shadow: 10px 10px 15px 10px black;
+}
+
+#animal-listing  {
+   background-color: yellowgreen;
+}
+
+/*screen sizes*/
 
 @media screen and (max-width: 800px) {
     .article-loop {
