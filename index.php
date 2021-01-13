@@ -38,6 +38,11 @@
                 <img src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
                 <button>Zu den Kleintieren</button>
             </div>
+            <div class="animal-content-div">
+                <h2>Erfolgreich vermittelt</h2>
+                <img src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
+                <button>Zu den Vermittlungen</button>
+            </div>
         </div>
     </section><?php get_sidebar(); ?>
 
