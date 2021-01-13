@@ -21,7 +21,7 @@ body {
     width: 100%;
     padding-left: 1%;
     margin-bottom: 8px;
-    background-color: #389c56;
+    background-color: #119639;
     border: 1px solid #78baff;
 }
 
@@ -143,6 +143,22 @@ a {
   
     background-color: rgb(46, 45, 45);
  
+}
+
+.donation-div{
+    width:100%;
+    height:500px;
+    background-color: goldenrod;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
+}
+
+.donation-div>h2{
+    margin-top:0px;
+    padding-top: 15px;
+    text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 4px;
 }
 
 

@@ -49,6 +49,10 @@
                 <button>Zu den Hinweisen</button>
             </div>
         </div>
+        <div class="donation-div">
+            <h2>Helfen Sie uns!</h2>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .
+        </div>
     </section><?php get_sidebar(); ?>
 
 </main>
