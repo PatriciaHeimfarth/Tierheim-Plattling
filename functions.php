@@ -30,3 +30,5 @@ add_theme_support('post-thumbnails');
 
 /*custom post types*/
 require_once( 'post_types/animal.php' );
+ 
+
