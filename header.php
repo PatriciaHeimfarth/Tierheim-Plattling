@@ -11,4 +11,15 @@
   <header class="main-header">
     <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
   </header>
-  <?php wp_nav_menu(array('header-menu' => 'header-menu')); ?>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Tiervermittlung
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Hunde</a>
+        <a href="#">Katzen</a>
+        <a href="#">Kleintiere</a>
+      </div>
+    </div>
+  </div>
