@@ -20,6 +20,41 @@
         <a href="#">Hunde</a>
         <a href="#">Katzen</a>
         <a href="#">Kleintiere</a>
+        <a href="#">Hinweise zur Vermittlung</a>
+        <a href="#">Erfolgreiche Vermittlungen</a>
       </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Tierheim
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Team</a>
+        <a href="#">Ehrenamtliche</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Informationen und Rundschau</a>
+      </div>  
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Mitglied werden
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Team</a>
+        <a href="#">Ehrenamtliche</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Informationen und Rundschau</a>
+      </div>  
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Helfen Sie uns!
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Team</a>
+        <a href="#">Ehrenamtliche</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Informationen und Rundschau</a>
+      </div>  
     </div>
   </div>
