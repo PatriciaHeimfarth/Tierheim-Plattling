@@ -20,6 +20,7 @@
         <a href="#">Hunde</a>
         <a href="#">Katzen</a>
         <a href="#">Kleintiere</a>
+        <a href="#">Platz-zu-Platz</a>
         <a href="#">Hinweise zur Vermittlung</a>
         <a href="#">Erfolgreiche Vermittlungen</a>
         <a href="#">Regenbogenland</a>
@@ -35,6 +36,7 @@
         <a href="#">Der Verein</a>
         <a href="#">Kontakt</a>
         <a href="#">In Film und Farbe</a>
+        <a href="#">Tierschutz-Jugendgruppe</a>
       </div>  
     </div>
     <div class="dropdown">
@@ -44,6 +46,7 @@
       <div class="dropdown-content">
         <a href="#">Zum Antrag</a>
         <a href="#">Namens- und Adressänderung</a>
+        <a href="#">Satzung</a>
       </div>  
     </div>
     <div class="dropdown">
