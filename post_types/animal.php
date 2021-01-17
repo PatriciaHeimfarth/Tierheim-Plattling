@@ -83,6 +83,7 @@ function animalmeta() {
 
     $species = get_post_meta( $post->ID, 'species', true );
     $birthdate = get_post_meta( $post->ID, 'birthdate', true );
+    $character = get_post_meta( $post->ID, 'character', true );
 	 
 
     echo '<table class="form-table">
@@ -98,6 +99,17 @@ function animalmeta() {
 						<option value="">Auswählen ...</option>
 						<option value="cat"' . selected( 'cat', $species, false ) . '>Katze</option>
 						<option value="dog"' . selected( 'dog', $species, false ) . '>Hund</option>
+					</select>
+				</td>
+            </tr>
+            <tr>
+				<th><label for="character">Charakter</label></th>
+				<td>
+					<select id="character" name="character">
+						<option value="">Auswählen ...</option>
+						<option value="nice"' . selected( 'nice', $character, false ) . '>Freundlich</option>
+                        <option value="complicated"' . selected( 'complicated', $character, false ) . '>Schwierig</option>
+                        <option value="playful"' . selected( 'playful', $character, false ) . '>Verspielt</option>
 					</select>
 				</td>
 			</tr>
@@ -120,12 +132,18 @@ function wpt_save_animal_meta( $post_id, $post ) {
 		update_post_meta( $post_id, 'birthdate', sanitize_text_field( $_POST[ 'birthdate' ] ) );
 	} else {
 		delete_post_meta( $post_id, 'birthdate' );
+    }
+    if( isset( $_POST[ 'birthdate' ] ) ) {
+		update_post_meta( $post_id, 'character', sanitize_text_field( $_POST[ 'character' ] ) );
+	} else {
+		delete_post_meta( $post_id, 'character' );
 	}
  
 	return $post_id;
     
-    $animal_meta['species'] =  $_POST['species'] ;
-    $animal_meta['birthdate'] =  $_POST['birthdate'] ;
+    $animal_meta['species'] =  $_POST['species'];
+    $animal_meta['birthdate'] =  $_POST['birthdate'];
+    $animal_meta['character'] =  $_POST['character'];
 
 	foreach ( $animal_meta as $key => $value ) :
 
