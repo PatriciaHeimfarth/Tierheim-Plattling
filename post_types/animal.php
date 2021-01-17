@@ -81,12 +81,28 @@ function animalmeta() {
 
 	wp_nonce_field( basename( __FILE__ ), 'animal_fields' );
 
-	$species = get_post_meta( $post->ID, 'species', true );
+    $species = get_post_meta( $post->ID, 'species', true );
+    $birthdate = get_post_meta( $post->ID, 'birthdate', true );
+	 
 
-    //echo '<input type="text" name="species" value="' . esc_textarea( $species )  . '" class="widefat">';
-    echo '<select name="species" class="widefat" ><option value="dog"'; if ($species == 'dog') echo ' selected="selected"';
-    echo '>Dog</option><option value="cat"'; if ($species == 'cat') echo ' selected="selected"';
-    echo'>Cat</option></select>';
+    echo '<table class="form-table">
+		<tbody>
+			<tr>
+				<th><label for="birthdate">Geburtsdatum</label></th>
+				<td><input type="text" id="birthdate" name="birthdate" value="' . esc_attr( $birthdate ) . '" class="regular-text"></td>
+			</tr>
+			<tr>
+				<th><label for="species">Tier-Art</label></th>
+				<td>
+					<select id="species" name="species">
+						<option value="">Auswählen ...</option>
+						<option value="cat"' . selected( 'cat', $species, false ) . '>Katze</option>
+						<option value="dog"' . selected( 'dog', $species, false ) . '>Hund</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+	</table>';
 }
 
 function wpt_save_animal_meta( $post_id, $post ) {
@@ -121,5 +137,3 @@ function wpt_save_animal_meta( $post_id, $post ) {
 
 }
 add_action( 'save_post', 'wpt_save_animal_meta', 1, 2 );
-
-?>
