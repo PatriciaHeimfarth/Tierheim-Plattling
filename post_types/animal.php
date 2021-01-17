@@ -111,11 +111,21 @@ function wpt_save_animal_meta( $post_id, $post ) {
 		return $post_id;
     }
     
-	if ( ! isset( $_POST['species'] ) || ! wp_verify_nonce( $_POST['animal_fields'], basename(__FILE__) ) ) {
-		return $post_id;
-    }
+	if( isset( $_POST[ 'species' ] ) ) {
+		update_post_meta( $post_id, 'species', sanitize_text_field( $_POST[ 'species' ] ) );
+	} else {
+		delete_post_meta( $post_id, 'species' );
+	}
+	if( isset( $_POST[ 'birthdate' ] ) ) {
+		update_post_meta( $post_id, 'birthdate', sanitize_text_field( $_POST[ 'birthdate' ] ) );
+	} else {
+		delete_post_meta( $post_id, 'birthdate' );
+	}
+ 
+	return $post_id;
     
-	$animal_meta['species'] =  $_POST['species'] ;
+    $animal_meta['species'] =  $_POST['species'] ;
+    $animal_meta['birthdate'] =  $_POST['birthdate'] ;
 
 	foreach ( $animal_meta as $key => $value ) :
 
