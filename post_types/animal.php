@@ -73,7 +73,7 @@ add_action("admin_init", "admin_init");
 
 function admin_init()
 {
-    add_meta_box("animalmeta", "Species", "animalmeta", "animal", "side", "low");
+    add_meta_box("animalmeta", "Weitere Informationen", "animalmeta", "animal", "advanced", "core");
 }
 
 function animalmeta() {
