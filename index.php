@@ -12,7 +12,7 @@
                     the_post_thumbnail('single-feature');
 
                     ?>
-                    <?php the_excerpt(); ?>
+                     
                 </article>
             <?php endwhile;
         else : ?>
