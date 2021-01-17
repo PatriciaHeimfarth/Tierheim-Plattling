@@ -48,6 +48,11 @@
                 <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
                 <button>Zu den Hinweisen</button>
             </div>
+            <div class="animal-content-div">
+                <h2>Regenbogenland</h2>
+                <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
+                <button>Zum Regenbogenland</button>
+            </div>
         </div>
         <div class="donation-div">
             <h2>Helfen Sie uns!</h2>

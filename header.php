@@ -22,28 +22,28 @@
         <a href="#">Kleintiere</a>
         <a href="#">Hinweise zur Vermittlung</a>
         <a href="#">Erfolgreiche Vermittlungen</a>
+        <a href="#">Regenbogenland</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Tierheim
+      <button class="dropbtn">Über das Tierheim
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="#">Team</a>
         <a href="#">Ehrenamtliche</a>
+        <a href="#">Der Verein</a>
         <a href="#">Kontakt</a>
-        <a href="#">Informationen und Rundschau</a>
+        <a href="#">In Film und Farbe</a>
       </div>  
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Mitglied werden
+      <button class="dropbtn">Für Mitglieder
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Team</a>
-        <a href="#">Ehrenamtliche</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Informationen und Rundschau</a>
+        <a href="#">Zum Antrag</a>
+        <a href="#">Namens- und Adressänderung</a>
       </div>  
     </div>
     <div class="dropdown">
@@ -51,10 +51,11 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Team</a>
+        <a href="#">Mitglied werden</a>
+        <a href="#">Spenden</a>
+        <a href="#">Wunschzettel und mehr</a>
         <a href="#">Ehrenamtliche</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Informationen und Rundschau</a>
+        <a href="#">Paten für die Tiere</a>
       </div>  
     </div>
   </div>
