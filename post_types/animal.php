@@ -84,15 +84,31 @@ function animalmeta() {
     $species = get_post_meta( $post->ID, 'species', true );
     $birthdate = get_post_meta( $post->ID, 'birthdate', true );
     $character = get_post_meta( $post->ID, 'character', true );
+    $race = get_post_meta( $post->ID, 'race', true );
+    $castration = get_post_meta( $post->ID, 'castration', true );
 	 
 
     echo '<table class="form-table">
 		<tbody>
 			<tr>
+				<th><label for="race">Rasse</label></th>
+				<td><input type="text" id="race" name="race" value="' . esc_attr( $race ) . '" class="regular-text"></td>
+            </tr>
+            <tr>
 				<th><label for="birthdate">Geburtsdatum</label></th>
 				<td><input type="text" id="birthdate" name="birthdate" value="' . esc_attr( $birthdate ) . '" class="regular-text"></td>
 			</tr>
 			<tr>
+				<th><label for="species">Kastriert/Sterilisiert?</label></th>
+				<td>
+					<select id="castration" name="castration">
+						<option value="">Auswählen ...</option>
+						<option value="yes"' . selected( 'cat', $castration, false ) . '>Ja</option>
+						<option value="no"' . selected( 'dog', $castration, false ) . '>Nein</option>
+					</select>
+				</td>
+            </tr>
+            <tr>
 				<th><label for="species">Tier-Art</label></th>
 				<td>
 					<select id="species" name="species">
@@ -127,11 +143,21 @@ function wpt_save_animal_meta( $post_id, $post ) {
 		update_post_meta( $post_id, 'species', sanitize_text_field( $_POST[ 'species' ] ) );
 	} else {
 		delete_post_meta( $post_id, 'species' );
+    }
+    if( isset( $_POST[ 'race' ] ) ) {
+		update_post_meta( $post_id, 'race', sanitize_text_field( $_POST[ 'race' ] ) );
+	} else {
+		delete_post_meta( $post_id, 'race' );
 	}
 	if( isset( $_POST[ 'birthdate' ] ) ) {
 		update_post_meta( $post_id, 'birthdate', sanitize_text_field( $_POST[ 'birthdate' ] ) );
 	} else {
 		delete_post_meta( $post_id, 'birthdate' );
+    }
+    if( isset( $_POST[ 'castration' ] ) ) {
+		update_post_meta( $post_id, 'castration', sanitize_text_field( $_POST[ 'castration' ] ) );
+	} else {
+		delete_post_meta( $post_id, 'castration' );
     }
     if( isset( $_POST[ 'birthdate' ] ) ) {
 		update_post_meta( $post_id, 'character', sanitize_text_field( $_POST[ 'character' ] ) );
@@ -144,6 +170,8 @@ function wpt_save_animal_meta( $post_id, $post ) {
     $animal_meta['species'] =  $_POST['species'];
     $animal_meta['birthdate'] =  $_POST['birthdate'];
     $animal_meta['character'] =  $_POST['character'];
+    $animal_meta['race'] =  $_POST['race'];
+    $animal_meta['castration'] =  $_POST['castration'];
 
 	foreach ( $animal_meta as $key => $value ) :
 

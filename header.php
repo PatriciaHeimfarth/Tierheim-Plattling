@@ -62,15 +62,13 @@
       </div>  
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Helfen Sie uns!
+      <button class="dropbtn">Kontakt
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
-        <a href="#">Mitglied werden</a>
-        <a href="#">Spenden</a>
-        <a href="#">Wunschzettel und mehr</a>
-        <a href="#">Ehrenamtliche</a>
-        <a href="#">Paten für die Tiere</a>
-      </div>  
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Impressum
+        <i class="fa fa-caret-down"></i>
+      </button>
     </div>
   </div>
