@@ -86,6 +86,7 @@ function animalmeta() {
     $character = get_post_meta( $post->ID, 'character', true );
     $race = get_post_meta( $post->ID, 'race', true );
     $castration = get_post_meta( $post->ID, 'castration', true );
+    $emergency = get_post_meta( $post->ID, 'emergency', true );
 	 
 
     echo '<table class="form-table">
@@ -99,12 +100,12 @@ function animalmeta() {
 				<td><input type="text" id="birthdate" name="birthdate" value="' . esc_attr( $birthdate ) . '" class="regular-text"></td>
 			</tr>
 			<tr>
-				<th><label for="species">Kastriert/Sterilisiert?</label></th>
+				<th><label for="castration">Kastriert/Sterilisiert?</label></th>
 				<td>
 					<select id="castration" name="castration">
 						<option value="">Auswählen ...</option>
-						<option value="yes"' . selected( 'cat', $castration, false ) . '>Ja</option>
-						<option value="no"' . selected( 'dog', $castration, false ) . '>Nein</option>
+						<option value="yes"' . selected( 'yes', $castration, false ) . '>Ja</option>
+						<option value="no"' . selected( 'no', $castration, false ) . '>Nein</option>
 					</select>
 				</td>
             </tr>
@@ -115,6 +116,16 @@ function animalmeta() {
 						<option value="">Auswählen ...</option>
 						<option value="cat"' . selected( 'cat', $species, false ) . '>Katze</option>
 						<option value="dog"' . selected( 'dog', $species, false ) . '>Hund</option>
+					</select>
+				</td>
+            </tr>
+            <tr>
+				<th><label for="emergency">Notfall?</label></th>
+				<td>
+					<select id="emergency" name="emergency">
+						<option value="">Auswählen ...</option>
+						<option value="yes"' . selected( 'yes', $emergency, false ) . '>Ja</option>
+						<option value="no"' . selected( 'no', $emergency, false ) . '>Nein</option>
 					</select>
 				</td>
             </tr>
@@ -159,10 +170,15 @@ function wpt_save_animal_meta( $post_id, $post ) {
 	} else {
 		delete_post_meta( $post_id, 'castration' );
     }
-    if( isset( $_POST[ 'birthdate' ] ) ) {
+    if( isset( $_POST[ 'character' ] ) ) {
 		update_post_meta( $post_id, 'character', sanitize_text_field( $_POST[ 'character' ] ) );
 	} else {
 		delete_post_meta( $post_id, 'character' );
+    }
+    if( isset( $_POST[ 'emergency' ] ) ) {
+		update_post_meta( $post_id, 'emergency', sanitize_text_field( $_POST[ 'emergency' ] ) );
+	} else {
+		delete_post_meta( $post_id, 'emergency' );
 	}
  
 	return $post_id;
@@ -172,6 +188,7 @@ function wpt_save_animal_meta( $post_id, $post ) {
     $animal_meta['character'] =  $_POST['character'];
     $animal_meta['race'] =  $_POST['race'];
     $animal_meta['castration'] =  $_POST['castration'];
+    $animal_meta['emergency'] =  $_POST['emergency'];
 
 	foreach ( $animal_meta as $key => $value ) :
 
