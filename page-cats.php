@@ -18,7 +18,7 @@ get_header();
 
         while ($loop->have_posts()) : $loop->the_post();
             if (has_post_thumbnail()) {     ?>
-                <div class="infos-above-animal-image-div">Eine schöne Katze</div>
+                <div class="infos-above-animal-image-div"><?php the_title(); ?></div>
                 <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('full'); ?>
                 </a>
