@@ -171,13 +171,28 @@ a {
 
 #animal-listing>a>img {
     width: 40%;
-    margin-top: 100px;
+    margin-bottom: 100px;
     box-shadow: 10px 10px 15px 10px black;
 }
 
 #animal-listing {
     background-color: yellowgreen;
 }
+
+
+.infos-above-animal-image-div {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f8f4f4;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+  }
+  
 
 /* Navbar  */
 
