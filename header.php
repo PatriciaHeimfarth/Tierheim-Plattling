@@ -17,8 +17,8 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./dogs">Hunde</a>
-        <a href="./cats">Katzen</a>
+        <a href="./hunde">Hunde</a>
+        <a href="./katzen">Katzen</a>
         <a href="./kleintiere">Kleintiere</a>
         <a href="./platz-zu-platz">Platz-zu-Platz</a>
         <a href="./hinweise-zur-vermittlung">Hinweise zur Vermittlung</a>
