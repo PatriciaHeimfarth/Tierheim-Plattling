@@ -23,6 +23,7 @@ get_header();
                     <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('full'); ?>
                     </a>
+                    <div class="infos-below-animal-image-div"></div>
                 </div>
         <?php
             }

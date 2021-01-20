@@ -190,6 +190,21 @@ a {
     float:inline-start;
     margin-left:60px;
 }
+.infos-below-animal-image-div {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f8f4f4;
+    width: 280px;
+    height:300px;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    float:inline-start;
+    margin-left:60px;
+}
 
 #animal-listing>.animal-list-format-div {
     width:400px;
