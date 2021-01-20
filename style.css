@@ -173,12 +173,12 @@ a {
     width: 350px;
     height: 350px;
     object-fit: scale-down;
-    box-shadow: 10px 10px 15px 10px black;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
 }
 
 .infos-above-animal-image-div {
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+ 
+    background: rgba(23, 214, 87, 0.774);
     color: #f8f4f4;
     width: 350px;
     transition: .5s ease;
@@ -192,11 +192,11 @@ a {
 }
 
 .infos-below-animal-image-div {
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+
+    background: rgba(23, 214, 87, 0.774);
     color: #f8f4f4;
     width: 350px;
-    height: 300px;
+    height: 200px;
     transition: .5s ease;
     opacity: 1;
     color: white;
