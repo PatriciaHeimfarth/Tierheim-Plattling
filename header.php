@@ -17,13 +17,13 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Hunde</a>
-        <a href="#">Katzen</a>
-        <a href="#">Kleintiere</a>
-        <a href="#">Platz-zu-Platz</a>
-        <a href="#">Hinweise zur Vermittlung</a>
-        <a href="#">Erfolgreiche Vermittlungen</a>
-        <a href="#">Regenbogenland</a>
+        <a href="./dogs">Hunde</a>
+        <a href="./cats">Katzen</a>
+        <a href="./kleintiere">Kleintiere</a>
+        <a href="./platz-zu-platz">Platz-zu-Platz</a>
+        <a href="./hinweise-zur-vermittlung">Hinweise zur Vermittlung</a>
+        <a href="./erfolgreiche-vermittlungen">Erfolgreiche Vermittlungen</a>
+        <a href="./regenbogenland">Regenbogenland</a>
       </div>
     </div>
     <div class="dropdown">
@@ -31,12 +31,12 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Team</a>
-        <a href="#">Ehrenamtliche</a>
-        <a href="#">Der Verein</a>
-        <a href="#">Kontakt</a>
-        <a href="#">In Film und Farbe</a>
-        <a href="#">Tierschutz-Jugendgruppe</a>
+        <a href="./team">Team</a>
+        <a href="./ehrenamtliche">Ehrenamtliche</a>
+        <a href="./verein">Der Verein</a>
+        <a href="./kontakt">Kontakt</a>
+        <a href="./film">In Film und Farbe</a>
+        <a href="./jugendgruppe">Tierschutz-Jugendgruppe</a>
       </div>  
     </div>
     <div class="dropdown">
@@ -44,9 +44,9 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Zum Antrag</a>
-        <a href="#">Namens- und Adressänderung</a>
-        <a href="#">Satzung</a>
+        <a href="./antrag-mitgliedschaft">Zum Antrag</a>
+        <a href="./adressänderung">Namens- und Adressänderung</a>
+        <a href="./satzung">Satzung</a>
       </div>  
     </div>
     <div class="dropdown">
@@ -54,20 +54,20 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Mitglied werden</a>
-        <a href="#">Spenden</a>
-        <a href="#">Wunschzettel und mehr</a>
-        <a href="#">Ehrenamtliche</a>
-        <a href="#">Paten für die Tiere</a>
+        <a href="./informationen-mitgliedschaft">Mitglied werden</a>
+        <a href="./spenden">Spenden</a>
+        <a href="./wunschzettel">Wunschzettel und mehr</a>
+        <a href="./ehrenamtliche">Ehrenamtliche</a>
+        <a href="./paten">Paten für die Tiere</a>
       </div>  
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Kontakt
+      <button class="dropbtn" onclick="location.href='./kontakt'">Kontakt
         <i class="fa fa-caret-down"></i>
       </button>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Impressum
+      <button class="dropbtn" onclick="location.href='./impressum'">Impressum
         <i class="fa fa-caret-down"></i>
       </button>
     </div>
