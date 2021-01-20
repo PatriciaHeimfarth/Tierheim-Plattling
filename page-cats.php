@@ -23,7 +23,13 @@ get_header();
                     <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('full'); ?>
                     </a>
-                    <div class="infos-below-animal-image-div"></div>
+                    <div class="infos-below-animal-image-div">
+
+                        <?php
+                        $birthdate = get_post_meta($post->ID, 'birthdate', true);
+                        echo 'Geburtsdatum: ' . $birthdate; ?>
+
+                    </div>
                 </div>
         <?php
             }
