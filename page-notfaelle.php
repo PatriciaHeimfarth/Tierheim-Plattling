@@ -9,8 +9,8 @@ get_header();
             'posts_per_page' => 1000,
             'orderby' => 'title',
             'order' => 'ASC',
-            'meta_key' => 'species',
-            'meta_value' => 'cat'
+            'meta_key' => 'emergency',
+            'meta_value' => 'yes'
 
         );
 
