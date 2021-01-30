@@ -21,7 +21,7 @@ body {
     width: 100%;
     padding-left: 1%;
     margin-bottom: 8px;
-    background-color: #119639;
+    background-color: green;
     border: 1px solid #78baff;
 }
 
@@ -176,9 +176,8 @@ a {
     box-shadow: 5px 5px 5px 5px whitesmoke;
 }
 
-.infos-above-animal-image-div {
- 
-    background: rgba(9, 100, 39, 0.774);
+.infos-above-animal-image-div, .infos-below-animal-image-div {
+    background: green;
     color: #f8f4f4;
     width: 350px;
     transition: .5s ease;
@@ -192,19 +191,7 @@ a {
 }
 
 .infos-below-animal-image-div {
-
-    background: rgba(9, 100, 39, 0.774);
-    color: #f8f4f4;
-    width: 350px;
     height: 200px;
-    transition: .5s ease;
-    opacity: 1;
-    color: white;
-    font-size: 22px;
-    padding: 20px;
-    text-align: center;
-    float: inline-start;
-    margin-left: 25px;
 }
 
 #animal-listing>.animal-list-format-div {
@@ -278,7 +265,8 @@ a {
 }
 
 /*footer*/
-footer{
+
+footer {
     width: 100%;
     padding-left: 1%;
     margin-bottom: 0px;

@@ -26,12 +26,12 @@
             <div class="animal-content-div">
                 <h2>Unsere Hunde</h2>
                 <img src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
-                <button onclick="location.href='./dogs'">Zu den Hunden</button>
+                <button onclick="location.href='./hunde'">Zu den Hunden</button>
             </div>
             <div class="animal-content-div">
                 <h2>Unsere Katzen</h2>
                 <img src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
-                <button onclick="location.href='./cats'">Zu den Katzen</button>
+                <button onclick="location.href='./katzen'">Zu den Katzen</button>
             </div>
             <div class="animal-content-div">
                 <h2>Unsere Kleintiere</h2>
