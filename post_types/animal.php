@@ -115,7 +115,8 @@ function animalmeta() {
 					<select id="species" name="species">
 						<option value="">Auswählen ...</option>
 						<option value="cat"' . selected( 'cat', $species, false ) . '>Katze</option>
-						<option value="dog"' . selected( 'dog', $species, false ) . '>Hund</option>
+            <option value="dog"' . selected( 'dog', $species, false ) . '>Hund</option>
+            <option value="dog"' . selected( 'smallanimal', $species, false ) . '>Kleintier</option>
 					</select>
 				</td>
             </tr>

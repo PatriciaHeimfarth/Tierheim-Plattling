@@ -10,7 +10,7 @@ get_header();
             'orderby' => 'title',
             'order' => 'ASC',
             'meta_key' => 'species',
-            'meta_value' => 'cat'
+            'meta_value' => 'smallanimal'
 
         );
 
