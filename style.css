@@ -274,6 +274,11 @@ footer {
     border: 1px solid #78baff;
 }
 
+/*Page css*/
+.page-div{
+    background-color: greenyellow;
+}
+
 /*screen sizes*/
 
 @media screen and (max-width: 800px) {
