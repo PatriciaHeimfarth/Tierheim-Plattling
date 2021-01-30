@@ -219,6 +219,7 @@ a {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
+    margin-bottom: 50px;
 }
 
 .navbar a {
@@ -274,6 +275,11 @@ a {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*footer*/
+.footer{
+    
 }
 
 /*screen sizes*/

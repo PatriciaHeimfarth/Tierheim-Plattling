@@ -20,6 +20,7 @@
         <a href="./hunde">Hunde</a>
         <a href="./katzen">Katzen</a>
         <a href="./kleintiere">Kleintiere</a>
+        <a href="./notfaelle">Notfälle</a>
         <a href="./platz-zu-platz">Platz-zu-Platz</a>
         <a href="./hinweise-zur-vermittlung">Hinweise zur Vermittlung</a>
         <a href="./erfolgreiche-vermittlungen">Erfolgreiche Vermittlungen</a>
