@@ -9,9 +9,17 @@ get_header();
             'posts_per_page' => 1000,
             'orderby' => 'title',
             'order' => 'ASC',
-            'meta_key' => 'species',
-            'meta_value' => 'dog'
-
+            'meta_query' => array(
+                'relation' => 'AND',
+                array(
+                    'key'   => 'species',
+                    'value' => 'dog'
+                ),
+                array(
+                    'key'   => 'dead',
+                    'value' => 'no'
+                )
+            )
         );
 
         $loop = new WP_Query($args);

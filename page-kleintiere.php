@@ -9,8 +9,17 @@ get_header();
             'posts_per_page' => 1000,
             'orderby' => 'title',
             'order' => 'ASC',
-            'meta_key' => 'species',
-            'meta_value' => 'smallanimal'
+            'meta_query' => array(
+                'relation' => 'AND',
+                array(
+                    'key'   => 'species',
+                    'value' => 'smallanimal'
+                ),
+                array(
+                    'key'   => 'dead',
+                    'value' => 'no'
+                )
+            )
 
         );
 
