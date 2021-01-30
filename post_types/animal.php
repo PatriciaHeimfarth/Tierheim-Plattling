@@ -88,6 +88,7 @@ function animalmeta()
   $castration = get_post_meta($post->ID, 'castration', true);
   $emergency = get_post_meta($post->ID, 'emergency', true);
   $dead = get_post_meta($post->ID, 'dead', true);
+  $placetoplace = get_post_meta($post->ID, 'placetoplace', true);
 
 
   echo '<table class="form-table">
@@ -145,13 +146,23 @@ function animalmeta()
       <tr>
       <th><label for="dead">Gestorben?</label></th>
       <td>
-        <select id="emedeadrgency" name="dead">
+        <select id="dead" name="dead">
           <option value="">Auswählen ...</option>
-          <option value="yes"' . selected( 'yes', $dead, false ) . '>Ja</option>
-          <option value="no"' . selected( 'no', $dead, false ) . '>Nein</option>
+          <option value="yes"' . selected('yes', $dead, false) . '>Ja</option>
+          <option value="no"' . selected('no', $dead, false) . '>Nein</option>
         </select>
       </td>
           </tr>
+          <tr>
+          <th><label for="placetoplace">Platz-Zu-Platz-Vermittlung?</label></th>
+          <td>
+            <select id="placetoplace" name="placetoplace">
+              <option value="">Auswählen ...</option>
+              <option value="yes"' . selected('yes', $placetoplace, false) . '>Ja</option>
+              <option value="no"' . selected('no', $placetoplace, false) . '>Nein</option>
+            </select>
+          </td>
+              </tr>
 		</tbody>
 	</table>';
 }
@@ -198,6 +209,11 @@ function wpt_save_animal_meta($post_id, $post)
   } else {
     delete_post_meta($post_id, 'dead');
   }
+  if (isset($_POST['placetoplace'])) {
+    update_post_meta($post_id, 'placetoplace', sanitize_text_field($_POST['placetoplace']));
+  } else {
+    delete_post_meta($post_id, 'placetoplace');
+  }
 
   return $post_id;
 
@@ -208,6 +224,7 @@ function wpt_save_animal_meta($post_id, $post)
   $animal_meta['castration'] =  $_POST['castration'];
   $animal_meta['emergency'] =  $_POST['emergency'];
   $animal_meta['dead'] =  $_POST['dead'];
+  $animal_meta['placetoplace'] =  $_POST['placetoplace'];
 
   foreach ($animal_meta as $key => $value) :
 
