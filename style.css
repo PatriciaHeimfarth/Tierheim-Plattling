@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-.main-header, footer {
+.main-header {
     width: 100%;
     padding-left: 1%;
     margin-bottom: 8px;
@@ -278,8 +278,12 @@ a {
 }
 
 /*footer*/
-.footer{
-    
+footer{
+    width: 100%;
+    padding-left: 1%;
+    margin-bottom: 0px;
+    background-color: #119639;
+    border: 1px solid #78baff;
 }
 
 /*screen sizes*/
