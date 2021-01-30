@@ -277,6 +277,13 @@ footer {
 /*Page css*/
 .page-div{
     background-color: greenyellow;
+    font-family: Vollkorn;
+}
+
+.page-div h2{
+ 
+    font-family: Satisfy;
+    font-size: xx-large;
 }
 
 /*screen sizes*/

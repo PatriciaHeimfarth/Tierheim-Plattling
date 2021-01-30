@@ -1,4 +1,9 @@
 <?php
+function load_google_fonts() {
+    wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Satisfy|Vollkorn');
+    wp_enqueue_style( 'googleFonts');
+    }
+    add_action('wp_print_styles', 'load_google_fonts');
 
 function add_normalize_CSS()
 {
