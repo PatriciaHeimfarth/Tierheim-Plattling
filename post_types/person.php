@@ -1,31 +1,31 @@
 <?php
 
 
-function register_animal_post_type()
+function register_person_post_type()
 {
   $labels = array(
-    'name'                  => __('Tiere'),
-    'singular_name'         => __('Tier'),
-    'add_new'               => __('Ein neues Tier hinzufügen'),
-    'add_new_item'          => __('Ein neues Tier hinzufügen'),
-    'edit_item'             => __('Das unten ausgewählte Tier verändern:'),
-    'new_item'              => __('Ein Tier hinzufügen'),
-    'view_item'             => __('Das Tier anzeigen'),
-    'view_items'             => __('Zeige alle Tiere'),
-    'search_items'          => __('Suche nach einem Tier'),
+    'name'                  => __('Personen'),
+    'singular_name'         => __('Person'),
+    'add_new'               => __('Eine neue Person hinzufügen'),
+    'add_new_item'          => __('Eine neue Person hinzufügen'),
+    'edit_item'             => __('Die unten ausgewählte Person verändern:'),
+    'new_item'              => __('Eine Person hinzufügen'),
+    'view_item'             => __('Die Person anzeigen'),
+    'view_items'             => __('Zeige alle Personem'),
+    'search_items'          => __('Suche nach einer Person'),
     'not_found'             => __('Nicht gefunden'),
     'not_found_in_trash'    => __('Im Papierkorb nicht gefunden'),
-    'parent_item_colon'     => __('Tiere ...'),
-    'all_items'             => __('Alle Tiere anzeigen'),
-    'archives'              => __('Tier-Archiv'),
-    'attributes'            => __('Tier-Eigenschaften'),
-    'insert_into_item'      => __('Zum Tier hinzufügen'),
-    'uploaded_to_this_item' => __('Zum Tier hinzugefügt'),
+    'parent_item_colon'     => __('Personen ...'),
+    'all_items'             => __('Alle Personen anzeigen'),
+    'archives'              => __('Person-Archiv'),
+    'attributes'            => __('Person-Eigenschaften'),
+    'insert_into_item'      => __('Zur Person hinzufügen'),
+    'uploaded_to_this_item' => __('Zur Person hinzugefügt'),
     'featured_image'        => __('Bild'),
-    'set_featured_image'    => __('Bild für das Tier festlegen'),
+    'set_featured_image'    => __('Bild für die Person festlegen'),
     'remove_featured_image' => __('Bild löschen'),
     'use_featured_image'    => __('Als Bild verwenden'),
-    'menu_name'             => __('Tiere anzeigen und bearbeiten'),
+    'menu_name'             => __('Personen anzeigen und bearbeiten'),
   );
 
   $supports = array(
@@ -44,7 +44,7 @@ function register_animal_post_type()
   $args = array(
     'labels' => $labels,
     'hierarchical' => false,
-    'description' => __('Animals', 'TRANSLATION_CONST'),
+    'description' => __('Persons', "TRANSLATION_CONST"),
 
     'supports' => $supports,
     'public' => true,
@@ -63,23 +63,23 @@ function register_animal_post_type()
     'supports' => array('title', 'editor', 'thumbnail')
   );
 
-  register_post_type('animal', $args);
+  register_post_type('person', $args);
 }
-add_action('init', 'register_animal_post_type');
+add_action('init', 'register_person_post_type');
 
-add_action("admin_init", "admin_init_animal");
+add_action("admin_init", "admin_init");
 
 
-function admin_init_animal()
+function admin_init()
 {
-  add_meta_box("animalmeta", "Weitere Informationen", "animalmeta", "animal", "advanced", "core");
+  add_meta_box("personmeta", "Weitere Informationen", "personmeta", "person", "advanced", "core");
 }
 
-function animalmeta()
+function personmeta()
 {
   global $post;
 
-  wp_nonce_field(basename(__FILE__), 'animal_fields');
+  wp_nonce_field(basename(__FILE__), 'person_fields');
 
   $species = get_post_meta($post->ID, 'species', true);
   $birthdate = get_post_meta($post->ID, 'birthdate', true);
@@ -118,7 +118,7 @@ function animalmeta()
 						<option value="">Auswählen ...</option>
 						<option value="cat"' . selected('cat', $species, false) . '>Katze</option>
             <option value="dog"' . selected('dog', $species, false) . '>Hund</option>
-            <option value="smallanimal"' . selected('smallanimal', $species, false) . '>Kleintier</option>
+            <option value="smallperson"' . selected('smallperson', $species, false) . '>Kleintier</option>
 					</select>
 				</td>
             </tr>
@@ -167,7 +167,7 @@ function animalmeta()
 	</table>';
 }
 
-function wpt_save_animal_meta($post_id, $post)
+function wpt_save_person_meta($post_id, $post)
 {
 
   if (!current_user_can('edit_post', $post_id)) {
@@ -217,16 +217,16 @@ function wpt_save_animal_meta($post_id, $post)
 
   return $post_id;
 
-  $animal_meta['species'] =  $_POST['species'];
-  $animal_meta['birthdate'] =  $_POST['birthdate'];
-  $animal_meta['character'] =  $_POST['character'];
-  $animal_meta['race'] =  $_POST['race'];
-  $animal_meta['castration'] =  $_POST['castration'];
-  $animal_meta['emergency'] =  $_POST['emergency'];
-  $animal_meta['dead'] =  $_POST['dead'];
-  $animal_meta['placetoplace'] =  $_POST['placetoplace'];
+  $person_meta['species'] =  $_POST['species'];
+  $person_meta['birthdate'] =  $_POST['birthdate'];
+  $person_meta['character'] =  $_POST['character'];
+  $person_meta['race'] =  $_POST['race'];
+  $person_meta['castration'] =  $_POST['castration'];
+  $person_meta['emergency'] =  $_POST['emergency'];
+  $person_meta['dead'] =  $_POST['dead'];
+  $person_meta['placetoplace'] =  $_POST['placetoplace'];
 
-  foreach ($animal_meta as $key => $value) :
+  foreach ($person_meta as $key => $value) :
 
     if ('revision' === $post->post_type) {
       return;
@@ -244,4 +244,4 @@ function wpt_save_animal_meta($post_id, $post)
 
   endforeach;
 }
-add_action('save_post', 'wpt_save_animal_meta', 1, 2);
+add_action('save_post', 'wpt_save_person_meta', 1, 2);
