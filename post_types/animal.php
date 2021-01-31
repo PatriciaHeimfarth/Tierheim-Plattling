@@ -89,6 +89,7 @@ function animalmeta()
   $emergency = get_post_meta($post->ID, 'emergency', true);
   $dead = get_post_meta($post->ID, 'dead', true);
   $placetoplace = get_post_meta($post->ID, 'placetoplace', true);
+  $isplaced = get_post_meta($post->ID, 'isplaced', true);
 
 
   echo '<table class="form-table">
@@ -163,6 +164,16 @@ function animalmeta()
             </select>
           </td>
               </tr>
+              <tr>
+              <th><label for="isplaced">Wurde erfolgreich vermittelt?</label></th>
+              <td>
+                <select id="isplaced" name="isplaced">
+                  <option value="">Auswählen ...</option>
+                  <option value="yes"' . selected('yes', $isplaced, false) . '>Ja</option>
+                  <option value="no"' . selected('no', $isplaced, false) . '>Nein</option>
+                </select>
+              </td>
+                  </tr>
 		</tbody>
 	</table>';
 }
@@ -214,6 +225,11 @@ function wpt_save_animal_meta($post_id, $post)
   } else {
     delete_post_meta($post_id, 'placetoplace');
   }
+  if (isset($_POST['isplaced'])) {
+    update_post_meta($post_id, 'isplaced', sanitize_text_field($_POST['isplaced']));
+  } else {
+    delete_post_meta($post_id, 'isplaced');
+  }
 
   return $post_id;
 
@@ -225,6 +241,7 @@ function wpt_save_animal_meta($post_id, $post)
   $animal_meta['emergency'] =  $_POST['emergency'];
   $animal_meta['dead'] =  $_POST['dead'];
   $animal_meta['placetoplace'] =  $_POST['placetoplace'];
+  $animal_meta['isplaced'] =  $_POST['isplaced'];
 
   foreach ($animal_meta as $key => $value) :
 
