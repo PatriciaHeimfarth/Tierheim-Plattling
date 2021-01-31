@@ -184,6 +184,7 @@ a {
     opacity: 1;
     color: white;
     font-size: 22px;
+    font-family: Vollkorn;
     padding: 20px;
     text-align: center;
     float: inline-start;
@@ -192,6 +193,7 @@ a {
 
 .infos-below-animal-image-div {
     height: 200px;
+    font-family: Vollkorn;
 }
 
 #animal-listing>.animal-list-format-div {

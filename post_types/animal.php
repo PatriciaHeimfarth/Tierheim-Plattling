@@ -90,6 +90,7 @@ function animalmeta()
   $dead = get_post_meta($post->ID, 'dead', true);
   $placetoplace = get_post_meta($post->ID, 'placetoplace', true);
   $isplaced = get_post_meta($post->ID, 'isplaced', true);
+  $in_shelter_since = get_post_meta($post->ID, 'in_shelter_since', true);
 
 
   echo '<table class="form-table">
@@ -154,6 +155,10 @@ function animalmeta()
         </select>
       </td>
           </tr>
+          <tr>		
+				<th><label for="in_shelter_since">Im Tierheim seit</label></th>
+				<td><input type="date" id="in_shelter_since" name="in_shelter_since" value="' . esc_attr($in_shelter_since) . '" class="regular-text"></td>
+      </tr>		
           <tr>
           <th><label for="placetoplace">Platz-Zu-Platz-Vermittlung?</label></th>
           <td>
@@ -173,7 +178,7 @@ function animalmeta()
                   <option value="no"' . selected('no', $isplaced, false) . '>Nein</option>
                 </select>
               </td>
-                  </tr>
+              </tr>
 		</tbody>
 	</table>';
 }
@@ -230,6 +235,11 @@ function wpt_save_animal_meta($post_id, $post)
   } else {
     delete_post_meta($post_id, 'isplaced');
   }
+  if (isset($_POST['in_shelter_since'])) {
+    update_post_meta($post_id, 'in_shelter_since', sanitize_text_field($_POST['in_shelter_since']));
+  } else {
+    delete_post_meta($post_id, 'in_shelter_since');
+  }
 
   return $post_id;
 
@@ -242,6 +252,7 @@ function wpt_save_animal_meta($post_id, $post)
   $animal_meta['dead'] =  $_POST['dead'];
   $animal_meta['placetoplace'] =  $_POST['placetoplace'];
   $animal_meta['isplaced'] =  $_POST['isplaced'];
+  $animal_meta['in_shelter_since'] =  $_POST['in_shelter_since'];
 
   foreach ($animal_meta as $key => $value) :
 
