@@ -71,7 +71,8 @@
                         </table>
                     </div>
                 </div>
-                <div class="row columns">
+                <h3>Beschreibung</h3>
+                <div class="animal-detail-content">
                     <?php the_content(); ?>
                 </div>
             </div>
