@@ -18,6 +18,10 @@ get_header();
                 array(
                     'key'   => 'dead',
                     'value' => 'no'
+                ),
+                array(
+                    'key'   => 'isplaced',
+                    'value' => 'no'
                 )
             )
         );
@@ -34,8 +38,23 @@ get_header();
                     <div class="infos-below-animal-image-div">
 
                         <?php
+                        $race = get_post_meta($post->ID, 'race', true);
+                        echo 'Charakter: ' . $race; ?>
+                        <br>
+                        <br>
+                        <?php
                         $birthdate = get_post_meta($post->ID, 'birthdate', true);
                         echo 'Geburtsdatum: ' . $birthdate; ?>
+                        <br>
+                        <br>
+                        <?php
+                        $character = get_post_meta($post->ID, 'character', true);
+                        echo 'Charakter: ' . $character; ?>
+                        <br>
+                        <br>
+                        <?php
+                        $castration = get_post_meta($post->ID, 'castration', true);
+                        echo 'Kastriert?: ' . $castration; ?>
 
                     </div>
                 </div>
@@ -49,3 +68,5 @@ get_header();
 
 </div>
 <?php get_footer() ?>
+
+ 
