@@ -121,57 +121,35 @@ function wpt_save_person_meta($post_id, $post)
     return $post_id;
   }
 
-  if (isset($_POST['species'])) {
-    update_post_meta($post_id, 'species', sanitize_text_field($_POST['species']));
+  if (isset($_POST['prename'])) {
+    update_post_meta($post_id, 'prename', sanitize_text_field($_POST['prename']));
   } else {
-    delete_post_meta($post_id, 'species');
+    delete_post_meta($post_id, 'prename');
   }
-  if (isset($_POST['race'])) {
-    update_post_meta($post_id, 'race', sanitize_text_field($_POST['race']));
+  if (isset($_POST['lastname'])) {
+    update_post_meta($post_id, 'lastname', sanitize_text_field($_POST['lastname']));
   } else {
-    delete_post_meta($post_id, 'race');
+    delete_post_meta($post_id, 'lastname');
   }
-  if (isset($_POST['birthdate'])) {
-    update_post_meta($post_id, 'birthdate', sanitize_text_field($_POST['birthdate']));
+  if (isset($_POST['entrydate'])) {
+    update_post_meta($post_id, 'entrydate', sanitize_text_field($_POST['entrydate']));
   } else {
-    delete_post_meta($post_id, 'birthdate');
+    delete_post_meta($post_id, 'entrydate');
   }
-  if (isset($_POST['castration'])) {
-    update_post_meta($post_id, 'castration', sanitize_text_field($_POST['castration']));
+  if (isset($_POST['status'])) {
+    update_post_meta($post_id, 'status', sanitize_text_field($_POST['status']));
   } else {
-    delete_post_meta($post_id, 'castration');
+    delete_post_meta($post_id, 'status');
   }
-  if (isset($_POST['character'])) {
-    update_post_meta($post_id, 'character', sanitize_text_field($_POST['character']));
-  } else {
-    delete_post_meta($post_id, 'character');
-  }
-  if (isset($_POST['emergency'])) {
-    update_post_meta($post_id, 'emergency', sanitize_text_field($_POST['emergency']));
-  } else {
-    delete_post_meta($post_id, 'emergency');
-  }
-  if (isset($_POST['dead'])) {
-    update_post_meta($post_id, 'dead', sanitize_text_field($_POST['dead']));
-  } else {
-    delete_post_meta($post_id, 'dead');
-  }
-  if (isset($_POST['placetoplace'])) {
-    update_post_meta($post_id, 'placetoplace', sanitize_text_field($_POST['placetoplace']));
-  } else {
-    delete_post_meta($post_id, 'placetoplace');
-  }
+
 
   return $post_id;
 
-  $person_meta['species'] =  $_POST['species'];
-  $person_meta['birthdate'] =  $_POST['birthdate'];
-  $person_meta['character'] =  $_POST['character'];
-  $person_meta['race'] =  $_POST['race'];
-  $person_meta['castration'] =  $_POST['castration'];
-  $person_meta['emergency'] =  $_POST['emergency'];
-  $person_meta['dead'] =  $_POST['dead'];
-  $person_meta['placetoplace'] =  $_POST['placetoplace'];
+  $person_meta['prename'] =  $_POST['prename'];
+  $person_meta['lastname'] =  $_POST['lastname'];
+  $person_meta['entrydate'] =  $_POST['entrydate'];
+  $person_meta['status'] =  $_POST['status'];
+ 
 
   foreach ($person_meta as $key => $value) :
 

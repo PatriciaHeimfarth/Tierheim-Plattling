@@ -37,7 +37,7 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./team">Team</a>
+        <a href="./mitarbeiter">Team</a>
         <a href="./ehrenamtliche">Ehrenamtliche</a>
         <a href="./verein">Der Verein</a>
         <a href="./kontakt">Kontakt</a>
