@@ -276,6 +276,26 @@ a {
     width:60%;
 }
 
+.animal-detail-title{
+   font-family: Satisfy;
+   font-size: xx-large;
+}
+
+.animal-detail-div{
+    font-family: Vollkorn;
+    font-size: x-large;
+    
+}
+
+.animal-detail-div table, .animal-detail-div table tr, .animal-detail-div table td{
+    margin: auto;
+    margin-top: 70px;
+    border: 1px solid black;
+    
+}
+
+
+
 /*footer*/
 
 footer {
