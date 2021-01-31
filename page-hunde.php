@@ -53,6 +53,11 @@ get_header();
                         <br>
                         <br>
                         <?php
+                        $in_shelter_since = get_post_meta($post->ID, 'in_shelter_since', true);
+                        echo 'Im Tierheim seit: ' . $in_shelter_since; ?>
+                        <br>
+                        <br>
+                        <?php
                         $castration = get_post_meta($post->ID, 'castration', true);
                         echo 'Kastriert?: ' . $castration; ?>
 

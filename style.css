@@ -183,23 +183,28 @@ a {
     transition: .5s ease;
     opacity: 1;
     color: white;
-    font-size: 22px;
     font-family: Vollkorn;
-    padding: 20px;
-    text-align: center;
+    padding: 20px;  
     float: inline-start;
     margin-left: 25px;
 }
 
+.infos-above-animal-image-div {
+    text-align: center;
+    font-size: 26px;
+}
+
 .infos-below-animal-image-div {
-    height: 200px;
-    font-family: Vollkorn;
+    height: 400px;
+    text-align: left;
+    font-size: 22px;
 }
 
 #animal-listing>.animal-list-format-div {
     width: 400px;
     margin-bottom: 100px;
     float: left;
+     
 }
 
 /* Navbar  */
