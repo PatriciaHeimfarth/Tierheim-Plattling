@@ -108,8 +108,8 @@ function animalmeta()
 				<td>
 					<select id="castration" name="castration">
 						<option value="">Auswählen ...</option>
-						<option value="yes"' . selected('yes', $castration, false) . '>Ja</option>
-						<option value="no"' . selected('no', $castration, false) . '>Nein</option>
+						<option value="Ja"' . selected('Ja', $castration, false) . '>Ja</option>
+						<option value="Nein"' . selected('Nein', $castration, false) . '>Nein</option>
 					</select>
 				</td>
             </tr>
@@ -139,9 +139,9 @@ function animalmeta()
 				<td>
 					<select id="character" name="character">
 						<option value="">Auswählen ...</option>
-						<option value="nice"' . selected('nice', $character, false) . '>Freundlich</option>
-                        <option value="complicated"' . selected('complicated', $character, false) . '>Schwierig</option>
-                        <option value="playful"' . selected('playful', $character, false) . '>Verspielt</option>
+						<option value="Freundlich"' . selected('Freundlich', $character, false) . '>Freundlich</option>
+                        <option value="Schwierig"' . selected('Schwierig', $character, false) . '>Schwierig</option>
+                        <option value="Verspielt"' . selected('Verspielt', $character, false) . '>Verspielt</option>
 					</select>
 				</td>
       </tr>

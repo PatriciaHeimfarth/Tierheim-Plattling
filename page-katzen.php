@@ -34,9 +34,29 @@ get_header();
                     </a>
                     <div class="infos-below-animal-image-div">
 
+                    <?php
+                        $race = get_post_meta($post->ID, 'race', true);
+                        echo 'Charakter: ' . $race; ?>
+                        <br>
+                        <br>
                         <?php
                         $birthdate = get_post_meta($post->ID, 'birthdate', true);
                         echo 'Geburtsdatum: ' . $birthdate; ?>
+                        <br>
+                        <br>
+                        <?php
+                        $character = get_post_meta($post->ID, 'character', true);
+                        echo 'Charakter: ' . $character; ?>
+                        <br>
+                        <br>
+                        <?php
+                        $in_shelter_since = get_post_meta($post->ID, 'in_shelter_since', true);
+                        echo 'Im Tierheim seit: ' . $in_shelter_since; ?>
+                        <br>
+                        <br>
+                        <?php
+                        $castration = get_post_meta($post->ID, 'castration', true);
+                        echo 'Kastriert?: ' . $castration; ?>
 
                     </div>
                 </div>
