@@ -11,7 +11,7 @@
         <div class="main-wrap" role="main">
             <div class="entry-content">
                 <div class="row">
-                    <div class="medium-6 columns">
+                    <div>
                         <?php if (has_post_thumbnail()) : ?>
                             <img class="animal-detail-image" src="<?php the_post_thumbnail_url('full'); ?>" />
                         <?php endif; ?>
@@ -20,6 +20,7 @@
                         <ul>
                             <li class="species">
                                 <?php echo $species; ?>
+                                HALLO
                             </li>
                             <li class="birthdate">
                                 <?php echo $birthdate; ?>

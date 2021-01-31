@@ -271,6 +271,11 @@ a {
     display: block;
 }
 
+/*Animal Detail Page*/
+.animal-detail-image {
+    width:60%;
+}
+
 /*footer*/
 
 footer {
