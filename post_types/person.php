@@ -81,88 +81,35 @@ function personmeta()
 
   wp_nonce_field(basename(__FILE__), 'person_fields');
 
-  $species = get_post_meta($post->ID, 'species', true);
-  $birthdate = get_post_meta($post->ID, 'birthdate', true);
-  $character = get_post_meta($post->ID, 'character', true);
-  $race = get_post_meta($post->ID, 'race', true);
-  $castration = get_post_meta($post->ID, 'castration', true);
-  $emergency = get_post_meta($post->ID, 'emergency', true);
-  $dead = get_post_meta($post->ID, 'dead', true);
-  $placetoplace = get_post_meta($post->ID, 'placetoplace', true);
-
+  $prename = get_post_meta($post->ID, 'prename', true);
+  $lastname = get_post_meta($post->ID, 'lastname', true);
+  $entrydate = get_post_meta($post->ID, 'entrydate', true);
+  $status = get_post_meta($post->ID, 'status', true);
 
   echo '<table class="form-table">
-		<tbody>
-			<tr>
-				<th><label for="race">Rasse</label></th>
-				<td><input type="text" id="race" name="race" value="' . esc_attr($race) . '" class="regular-text"></td>
-            </tr>
-            <tr>
-				<th><label for="birthdate">Geburtsdatum</label></th>
-				<td><input type="text" id="birthdate" name="birthdate" value="' . esc_attr($birthdate) . '" class="regular-text"></td>
-			</tr>
-			<tr>
-				<th><label for="castration">Kastriert/Sterilisiert?</label></th>
-				<td>
-					<select id="castration" name="castration">
-						<option value="">Auswählen ...</option>
-						<option value="yes"' . selected('yes', $castration, false) . '>Ja</option>
-						<option value="no"' . selected('no', $castration, false) . '>Nein</option>
-					</select>
-				</td>
-            </tr>
-            <tr>
-				<th><label for="species">Tier-Art</label></th>
-				<td>
-					<select id="species" name="species">
-						<option value="">Auswählen ...</option>
-						<option value="cat"' . selected('cat', $species, false) . '>Katze</option>
-            <option value="dog"' . selected('dog', $species, false) . '>Hund</option>
-            <option value="smallperson"' . selected('smallperson', $species, false) . '>Kleintier</option>
-					</select>
-				</td>
-            </tr>
-            <tr>
-				<th><label for="emergency">Notfall?</label></th>
-				<td>
-					<select id="emergency" name="emergency">
-						<option value="">Auswählen ...</option>
-						<option value="yes"' . selected('yes', $emergency, false) . '>Ja</option>
-						<option value="no"' . selected('no', $emergency, false) . '>Nein</option>
-					</select>
-				</td>
-            </tr>
-            <tr>
-				<th><label for="character">Charakter</label></th>
-				<td>
-					<select id="character" name="character">
-						<option value="">Auswählen ...</option>
-						<option value="nice"' . selected('nice', $character, false) . '>Freundlich</option>
-                        <option value="complicated"' . selected('complicated', $character, false) . '>Schwierig</option>
-                        <option value="playful"' . selected('playful', $character, false) . '>Verspielt</option>
-					</select>
-				</td>
+    <tbody>
+      <tr>		
+				<th><label for="prename">Vorname</label></th>
+				<td><input type="text" id="prename" name="prename" value="' . esc_attr($prename) . '" class="regular-text"></td>
+      </tr>	
+      <tr>		
+				<th><label for="lastname">Nachname</label></th>
+				<td><input type="text" id="lastname" name="lastname" value="' . esc_attr($lastname) . '" class="regular-text"></td>
       </tr>
+      <tr>		
+				<th><label for="entrydate">Eintrittsdatum</label></th>
+				<td><input type="date" id="entrydate" name="entrydate" value="' . esc_attr($entrydate) . '" class="regular-text"></td>
+      </tr>		 
       <tr>
-      <th><label for="dead">Gestorben?</label></th>
+      <th><label for="status">Status</label></th>
       <td>
-        <select id="dead" name="dead">
+        <select id="status" name="status">
           <option value="">Auswählen ...</option>
-          <option value="yes"' . selected('yes', $dead, false) . '>Ja</option>
-          <option value="no"' . selected('no', $dead, false) . '>Nein</option>
+          <option value="unsalaried"' . selected('unsalaried', $status, false) . '>Ehrenamtlich</option>
+          <option value="employee"' . selected('employee', $status, false) . '>Mitarbeiter</option>
         </select>
       </td>
-          </tr>
-          <tr>
-          <th><label for="placetoplace">Platz-Zu-Platz-Vermittlung?</label></th>
-          <td>
-            <select id="placetoplace" name="placetoplace">
-              <option value="">Auswählen ...</option>
-              <option value="yes"' . selected('yes', $placetoplace, false) . '>Ja</option>
-              <option value="no"' . selected('no', $placetoplace, false) . '>Nein</option>
-            </select>
-          </td>
-              </tr>
+      </tr>
 		</tbody>
 	</table>';
 }
