@@ -35,7 +35,7 @@ get_header();
                     <div class="infos-below-animal-image-div">
                     <?php
                         $race = get_post_meta($post->ID, 'race', true);
-                        echo 'Charakter: ' . $race; ?>
+                        echo 'Rasse: ' . $race; ?>
                         <br>
                         <br>
                         <?php
