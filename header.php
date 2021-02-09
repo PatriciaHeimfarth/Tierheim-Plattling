@@ -18,41 +18,43 @@
       </button>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Tiervermittlung
+      <button class="dropbtn">Vermittlung
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
+      <a href="./hunde">Allgemeines</a>
         <a href="./hunde">Hunde</a>
         <a href="./katzen">Katzen</a>
         <a href="./kleintiere">Kleintiere</a>
-        <a href="./notfaelle">Notfälle</a>
-        <a href="./platz-zu-platz">Platz-zu-Platz</a>
-        <a href="./hinweise-zur-vermittlung">Hinweise zur Vermittlung</a>
-        <a href="./erfolgreiche-vermittlungen">Erfolgreiche Vermittlungen</a>
-        <a href="./regenbogenland">Regenbogenland</a>
+        <a href="./notfaelle">Von Privat</a>
+        <a href="./platz-zu-platz">Schutzgebühr</a>
+        <a href="./hinweise-zur-vermittlung">Ablauf der Vermittlung</a>
+        <a href="./erfolgreiche-vermittlungen">Tiere im Glück</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Über das Tierheim
+      <button class="dropbtn">Vermisst und Gefunden
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./mitarbeiter">Team</a>
-        <a href="./ehrenamtliche">Ehrenamtliche</a>
-        <a href="./verein">Der Verein</a>
-        <a href="./kontakt">Kontakt</a>
-        <a href="./film">In Film und Farbe</a>
-        <a href="./jugendgruppe">Tierschutz-Jugendgruppe</a>
+        <a href="./mitarbeiter">Fundtiere</a>
+        <a href="./ehrenamtliche">Vermisste Tiere</a>
+        <a href="./verein">Vermisstes Tier melden</a>
+        <a href="./kontakt">Datenschutz</a>
       </div>  
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Für Mitglieder
+      <button class="dropbtn">Tierheim
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./antrag-mitgliedschaft">Zum Antrag</a>
-        <a href="./adressänderung">Namens- und Adressänderung</a>
-        <a href="./satzung">Satzung</a>
+        <a href="./antrag-mitgliedschaft">Der Verein</a>
+        <a href="./adressänderung">Unser Team</a>
+        <a href="./satzung">Der Vorstand</a>
+        <a href="./satzung">Unsere Ehrenamtlichen</a>
+        <a href="./satzung">Gassigehen</a>
+        <a href="./satzung">Patenschaften</a>
+        <a href="./satzung">Jugendgruppe</a>
       </div>  
     </div>
     <div class="dropdown">
