@@ -58,15 +58,15 @@
       </div>  
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Helfen Sie uns!
+      <button class="dropbtn">Spenden und Helfen
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="./informationen-mitgliedschaft">Mitglied werden</a>
         <a href="./spenden">Spenden</a>
-        <a href="./wunschzettel">Wunschzettel und mehr</a>
-        <a href="./ehrenamtliche">Ehrenamtliche</a>
-        <a href="./paten">Paten für die Tiere</a>
+        <a href="./wunschzettel">Wunschliste Amazon und mehr</a>
+        <a href="./ehrenamtliche">Patenschaften</a>
+        <a href="./paten">Ehrenamtlich helfen</a>
       </div>  
     </div>
     <div class="dropdown">
