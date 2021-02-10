@@ -12,7 +12,7 @@
     <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
   </header>
   <div class="navbar">
-  <div class="dropdown">
+    <div class="dropdown">
       <button class="dropbtn" onclick="location.href='<?php echo esc_url(home_url('/')); ?>'">Home
         <i class="fa fa-caret-down"></i>
       </button>
@@ -22,14 +22,14 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-      <a href="./hunde">Allgemeines</a>
+        <a href="./allgemeines">Allgemeines</a>
         <a href="./hunde">Hunde</a>
         <a href="./katzen">Katzen</a>
         <a href="./kleintiere">Kleintiere</a>
-        <a href="./notfaelle">Von Privat</a>
-        <a href="./platz-zu-platz">Schutzgebühr</a>
-        <a href="./hinweise-zur-vermittlung">Ablauf der Vermittlung</a>
-        <a href="./erfolgreiche-vermittlungen">Tiere im Glück</a>
+        <a href="./von-privat">Von Privat</a>
+        <a href="./schutzgebühr">Schutzgebühr</a>
+        <a href="./ablauf-der-vermittlung">Ablauf der Vermittlung</a>
+        <a href="./tiere-im-glueck">Tiere im Glück</a>
       </div>
     </div>
     <div class="dropdown">
@@ -37,37 +37,37 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./mitarbeiter">Fundtiere</a>
-        <a href="./ehrenamtliche">Vermisste Tiere</a>
-        <a href="./verein">Vermisstes Tier melden</a>
-        <a href="./kontakt">Datenschutz</a>
-      </div>  
+        <a href="./fundtiere">Fundtiere</a>
+        <a href="./vermisste-tiere">Vermisste Tiere</a>
+        <a href="./vermisstes-tier-melden">Vermisstes Tier melden</a>
+        <a href="./datenschutz">Datenschutz</a>
+      </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Tierheim
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./antrag-mitgliedschaft">Der Verein</a>
-        <a href="./adressänderung">Unser Team</a>
-        <a href="./satzung">Der Vorstand</a>
-        <a href="./satzung">Unsere Ehrenamtlichen</a>
-        <a href="./satzung">Gassigehen</a>
-        <a href="./satzung">Patenschaften</a>
-        <a href="./satzung">Jugendgruppe</a>
-      </div>  
+        <a href="./der-verein">Der Verein</a>
+        <a href="./unser-team">Unser Team</a>
+        <a href="./der-vorstand">Der Vorstand</a>
+        <a href="./unsere-ehrenamtlichen">Unsere Ehrenamtlichen</a>
+        <a href="./gassigehen">Gassigehen</a>
+        <a href="./patenschaften">Patenschaften</a>
+        <a href="./jugendgruppe">Jugendgruppe</a>
+      </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Spenden und Helfen
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./informationen-mitgliedschaft">Mitglied werden</a>
+        <a href="./mitglied-werden">Mitglied werden</a>
         <a href="./spenden">Spenden</a>
         <a href="./wunschzettel">Wunschliste Amazon und mehr</a>
-        <a href="./ehrenamtliche">Patenschaften</a>
-        <a href="./paten">Ehrenamtlich helfen</a>
-      </div>  
+        <a href="./patenschaften">Patenschaften</a>
+        <a href="./ehrenamtliche">Ehrenamtlich helfen</a>
+      </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='./kontakt'">Kontakt
