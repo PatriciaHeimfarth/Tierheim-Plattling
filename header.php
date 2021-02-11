@@ -70,9 +70,13 @@
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn" onclick="location.href='./kontakt'">Kontakt
+      <button class="dropbtn">Kontakt
         <i class="fa fa-caret-down"></i>
       </button>
+      <div class="dropdown-content">
+        <a href="./oeffnungszeiten">Öffnungszeiten</a>
+        <a href="./anfahrtskizze">Anfahrtskizze</a>
+      </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='./impressum'">Impressum
