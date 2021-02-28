@@ -27,7 +27,7 @@
         <a href="./katzen">Katzen</a>
         <a href="./kleintiere">Kleintiere</a>
         <a href="./von-privat">Von Privat</a>
-        <a href="./schutzgebühr">Schutzgebühr</a>
+        <a href="./schutzgebuehr">Schutzgebühr</a>
         <a href="./ablauf-der-vermittlung">Ablauf der Vermittlung</a>
         <a href="./tiere-im-glueck">Tiere im Glück</a>
       </div>
