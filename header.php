@@ -22,14 +22,14 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./allgemeines">Allgemeines</a>
-        <a href="./hunde">Hunde</a>
-        <a href="./katzen">Katzen</a>
-        <a href="./kleintiere">Kleintiere</a>
-        <a href="./von-privat">Von Privat</a>
-        <a href="./schutzgebuehr">Schutzgebühr</a>
-        <a href="./ablauf-der-vermittlung">Ablauf der Vermittlung</a>
-        <a href="./tiere-im-glueck">Tiere im Glück</a>
+        <a href= "<?php echo get_bloginfo('url') ?>/allgemeines">Allgemeines</a>
+        <a href="<?php echo get_bloginfo('url') ?>/hunde">Hunde</a>
+        <a href="<?php echo get_bloginfo('url') ?>/katzen">Katzen</a>
+        <a href="<?php echo get_bloginfo('url') ?>/kleintiere">Kleintiere</a>
+        <a href="<?php echo get_bloginfo('url') ?>/von-privat">Von Privat</a>
+        <a href="<?php echo get_bloginfo('url') ?>/schutzgebuehr">Schutzgebühr</a>
+        <a href="<?php echo get_bloginfo('url') ?>/ablauf-der-vermittlung">Ablauf der Vermittlung</a>
+        <a href="<?php echo get_bloginfo('url') ?>/tiere-im-glueck">Tiere im Glück</a>
       </div>
     </div>
     <div class="dropdown">
@@ -37,10 +37,10 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./fundtiere">Fundtiere</a>
-        <a href="./vermisste-tiere">Vermisste Tiere</a>
-        <a href="./vermisstes-tier-melden">Vermisstes Tier melden</a>
-        <a href="./datenschutz">Datenschutz</a>
+        <a href="<?php echo get_bloginfo('url') ?>/fundtiere">Fundtiere</a>
+        <a href="<?php echo get_bloginfo('url') ?>/vermisste-tiere">Vermisste Tiere</a>
+        <a href="<?php echo get_bloginfo('url') ?>/vermisstes-tier-melden">Vermisstes Tier melden</a>
+        <a href="<?php echo get_bloginfo('url') ?>/datenschutz">Datenschutz</a>
       </div>
     </div>
     <div class="dropdown">
@@ -48,13 +48,13 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./der-verein">Der Verein</a>
-        <a href="./unser-team">Unser Team</a>
-        <a href="./der-vorstand">Der Vorstand</a>
-        <a href="./unsere-ehrenamtlichen">Unsere Ehrenamtlichen</a>
-        <a href="./gassigehen">Gassigehen</a>
-        <a href="./patenschaften">Patenschaften</a>
-        <a href="./jugendgruppe">Jugendgruppe</a>
+        <a href="<?php echo get_bloginfo('url') ?>/der-verein">Der Verein</a>
+        <a href="<?php echo get_bloginfo('url') ?>/unser-team">Unser Team</a>
+        <a href="<?php echo get_bloginfo('url') ?>/der-vorstand">Der Vorstand</a>
+        <a href="<?php echo get_bloginfo('url') ?>/unsere-ehrenamtlichen">Unsere Ehrenamtlichen</a>
+        <a href="<?php echo get_bloginfo('url') ?>/gassigehen">Gassigehen</a>
+        <a href="<?php echo get_bloginfo('url') ?>/patenschaften">Patenschaften</a>
+        <a href="<?php echo get_bloginfo('url') ?>/jugendgruppe">Jugendgruppe</a>
       </div>
     </div>
     <div class="dropdown">
@@ -62,11 +62,11 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./mitglied-werden">Mitglied werden</a>
-        <a href="./spenden">Spenden</a>
-        <a href="./wunschzettel">Wunschliste Amazon und mehr</a>
-        <a href="./patenschaften">Patenschaften</a>
-        <a href="./ehrenamtliche">Ehrenamtlich helfen</a>
+        <a href="<?php echo get_bloginfo('url') ?>/mitglied-werden">Mitglied werden</a>
+        <a href="<?php echo get_bloginfo('url') ?>/spenden">Spenden</a>
+        <a href="<?php echo get_bloginfo('url') ?>/wunschzettel">Wunschliste Amazon und mehr</a>
+        <a href="<?php echo get_bloginfo('url') ?>/patenschaften">Patenschaften</a>
+        <a href="<?php echo get_bloginfo('url') ?>/ehrenamtliche">Ehrenamtlich helfen</a>
       </div>
     </div>
     <div class="dropdown">
@@ -74,12 +74,12 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="./oeffnungszeiten">Öffnungszeiten</a>
-        <a href="./anfahrtskizze">Anfahrtskizze</a>
+        <a href="<?php echo get_bloginfo('url') ?>/oeffnungszeiten">Öffnungszeiten</a>
+        <a href="<?php echo get_bloginfo('url') ?>/anfahrtskizze">Anfahrtskizze</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn" onclick="location.href='./impressum'">Impressum
+      <button class="dropbtn" onclick="location.href='<?php echo get_bloginfo('url') ?>/impressum'">Impressum
         <i class="fa fa-caret-down"></i>
       </button>
     </div>
