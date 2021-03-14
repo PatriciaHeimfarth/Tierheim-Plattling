@@ -49,9 +49,9 @@
       </button>
       <div class="dropdown-content">
         <a href="<?php echo get_bloginfo('url') ?>/der-verein">Der Verein</a>
-        <a href="<?php echo get_bloginfo('url') ?>/unser-team">Unser Team</a>
+        <a href="<?php echo get_bloginfo('url') ?>/mitarbeiter">Unser Team</a>
         <a href="<?php echo get_bloginfo('url') ?>/der-vorstand">Der Vorstand</a>
-        <a href="<?php echo get_bloginfo('url') ?>/unsere-ehrenamtlichen">Unsere Ehrenamtlichen</a>
+        <a href="<?php echo get_bloginfo('url') ?>/ehrenamtliche">Unsere Ehrenamtlichen</a>
         <a href="<?php echo get_bloginfo('url') ?>/gassigehen">Gassigehen</a>
         <a href="<?php echo get_bloginfo('url') ?>/patenschaften">Patenschaften</a>
         <a href="<?php echo get_bloginfo('url') ?>/jugendgruppe">Jugendgruppe</a>

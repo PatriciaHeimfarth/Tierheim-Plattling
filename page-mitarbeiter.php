@@ -23,8 +23,9 @@ get_header();
                         <?php the_post_thumbnail('full'); ?>
                     </a>
                     <div class="infos-below-animal-image-div">
-
-                        <?php
+                        <?php if (!empty(get_post_field('post_content'))) {
+                            echo get_post_field('post_content');
+                        }
                         ?>
 
                     </div>
