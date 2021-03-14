@@ -1,33 +1,49 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
-    <article <?php post_class() ?> id="person-<?php the_ID(); ?>">
+    <article <?php post_class() ?> id="animal-<?php the_ID(); ?>">
         <?php
-        $prename = get_post_meta($post->ID, 'prename', true);
-        $lastname = get_post_meta($post->ID, 'lastname', true); ?>
+        $prename = get_post_meta($post->ID, 'character', true);
+        $lastname = get_post_meta($post->ID, 'race', true); ?>
         <div class="row column" id="animal-header">
-            <h1 class="entry-title"><?php the_title(); ?></h1>
+            <h1 class="animal-detail-title"><?php the_title(); ?></h1>
         </div>
-        <div class="main-wrap" role="main">
+        <div class="animal-detail-div" role="main">
             <div class="entry-content">
                 <div class="row">
-                    <div class="medium-6 columns">
+                    <div>
                         <?php if (has_post_thumbnail()) : ?>
                             <img class="animal-detail-image" src="<?php the_post_thumbnail_url('full'); ?>" />
                         <?php endif; ?>
                     </div>
                     <div>
-                        <ul>
-                            <li class="prename">
-                                <?php echo $prename; ?>
-                            </li>
-                            <li class="lastname">
-                                <?php echo $lastname; ?>
-                            </li>
-                        </ul>
+                        <table>
+                            <thead>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <?php echo "Vorname"; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $prename; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <?php echo "Nachname"; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $lastname; ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="row columns">
+                <h3>Beschreibung</h3>
+                <div class="animal-detail-content">
                     <?php the_content(); ?>
                 </div>
             </div>
