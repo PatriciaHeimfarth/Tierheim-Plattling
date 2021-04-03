@@ -25,7 +25,7 @@ function register_animal_post_type()
     'set_featured_image'    => __('Bild für das Tier festlegen'),
     'remove_featured_image' => __('Bild löschen'),
     'use_featured_image'    => __('Als Bild verwenden'),
-    'menu_name'             => __('Tiere anzeigen und bearbeiten'),
+    'menu_name'             => __('Tierheim-Tiere anzeigen und bearbeiten'),
   );
 
   $supports = array(

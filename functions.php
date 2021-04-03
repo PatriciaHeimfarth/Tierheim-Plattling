@@ -36,5 +36,7 @@ add_theme_support('post-thumbnails');
 /*custom post types*/
 require_once( 'post_types/animal.php' );
 require_once( 'post_types/person.php' );
+require_once( 'post_types/missing.php' );
+
  
 
