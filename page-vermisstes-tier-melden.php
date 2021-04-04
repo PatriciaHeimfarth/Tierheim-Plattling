@@ -1,37 +1,53 @@
 <?php
+
+$postTitleError = '';
+
+if (isset($_POST['submitted']) && isset( $_POST['post_nonce_field'] )
+ && wp_verify_nonce( $_POST['post_nonce_field'], 'post_nonce' )) {
+
+    if (trim($_POST['name']) === '') {
+        $postTitleError = 'Bitte einen Namen eingeben.';
+        $hasError = true;
+    }
+}
+$missing_animal = array(
+    'post_title' => wp_strip_all_tags($_POST['name']),
+    'post_type' => 'missing',
+    'post_status' => 'pending'
+);
+
+$post_id = wp_insert_post($missing_animal);
+?>
+<?php
 get_header();
 ?>
 <div class="main-wrap" role="main">
 
-<form action="" id="primaryPostForm" method="POST">
- 
- <fieldset>
-     <label for="missing-name"><?php _e('Missing Name:', 'framework') ?></label>
-     <input type="text" name="missing-name" id="missingName" class="required" />
- </fieldset>
+    <form action="" id="MissingForm" method="POST">
 
- <fieldset>
-     <label for="missing-since"><?php _e('Missing Since:', 'framework') ?></label>
-     <input type="date" name="missing-since" id="missingSince" class="required" />
- </fieldset>
+        <fieldset>
+            <label for="name"><?php _e('Missing Name:', 'framework') ?></label>
+            <input type="text" value="<?php if (isset($_POST['name'])) echo $_POST['name']; ?>" name="name" id="name" class="required" />
+        </fieldset>
 
- <fieldset>
-     <label for="missing-last-place"><?php _e('Missing Last Place:', 'framework') ?></label>
-     <input type="text" name="missing-last-place" id="missingLastPlace" class="required" />
- </fieldset>
 
- <fieldset>
-     <label for="missing-description"><?php _e('Missing Description:', 'framework') ?></label>
-     <textarea name="postDescription" id="postDescription" rows="8" cols="30" class="required"></textarea>
- </fieldset>
+        <fieldset>
+            <input type="hidden" name="submitted" id="submitted" value="true" />
+            <?php wp_nonce_field('post_nonce', 'post_nonce_field'); ?>
+            <button type="submit"><?php _e('Add Missing', 'framework') ?></button>
+        </fieldset>
 
- <fieldset>
-     <input type="hidden" name="submitted" id="submitted" value="true" />
-
-     <button type="submit"><?php _e('Add Missing', 'framework') ?></button>
- </fieldset>
-
-</form>
+    </form>
 
 </div>
+<?php if ($postTitleError != '') { ?>
+    <span class="error"><?php echo $postTitleError; ?></span>
+    <div class="clearfix"></div>
+<?php } 
+if ( $post_id ) {
+    wp_redirect( home_url() );
+    exit;
+}
+?>
+
 <?php get_footer() ?>
