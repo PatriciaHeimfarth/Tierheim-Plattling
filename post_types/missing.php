@@ -81,14 +81,14 @@ function missingmeta()
 
   wp_nonce_field(basename(__FILE__), 'missing_fields');
 
-  $name = get_post_meta($post->ID, 'name', true);
+  $missingname = get_post_meta($post->ID, 'missing-name', true);
  
 
   echo '<table class="form-table">
     <tbody>
       <tr>		
-				<th><label for="name">Name</label></th>
-				<td><input type="text" id="name" name="name" value="' . esc_attr($name) . '" class="regular-text"></td>
+				<th><label for="missing-name">Name</label></th>
+				<td><input type="text" id="missing-name" name="missing-name" value="' . esc_attr($missingname) . '" class="regular-text"></td>
       </tr>	
      
 		</tbody>
@@ -102,16 +102,16 @@ function wpt_save_missing_meta($post_id, $post)
     return $post_id;
   }
 
-  if (isset($_POST['name'])) {
-    update_post_meta($post_id, 'name', sanitize_text_field($_POST['name']));
+  if (isset($_POST['missing-name'])) {
+    update_post_meta($post_id, 'missing-name', sanitize_text_field($_POST['missing-name']));
   } else {
-    delete_post_meta($post_id, 'name');
+    delete_post_meta($post_id, 'missing-name');
   }
   
   
   return $post_id;
 
-  $missing_meta['name'] =  $_POST['name'];
+  $missing_meta['missing-name'] =  $_POST['missing-name'];
  
  
 
