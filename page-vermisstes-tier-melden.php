@@ -9,22 +9,19 @@ if (isset($_POST['submitted'])) {
         $hasError = true;
     }
 }
-if (isset($_POST["name"])) {
-    $missing_animal = array(
-        'post_title' => wp_strip_all_tags($_POST['name']),
-        'post_content' => 'test',
-        'post_type' => 'missing',
-        'post_status' => 'pending',
-        'meta_input' => array(
-            'name' => wp_strip_all_tags($_POST['name'])
-        )
-    );
-    $post_id = wp_insert_post($missing_animal);
-    add_post_meta($post_id, 'name', $_POST['name'], false);
-    
-} else {
-    $missing_animal = null;
-}
+
+$missing_animal = array(
+    'post_title' => wp_strip_all_tags($_POST['name']),
+    'post_content' => 'test',
+    'post_type' => 'missing',
+    'post_status' => 'pending',
+    'meta_input' => array(
+        'name' => wp_strip_all_tags($_POST['name'])
+    )
+);
+$post_id = wp_insert_post($missing_animal);
+add_post_meta($post_id, 'name', $_POST['name'], false);
+
 
 ?>
 <?php
