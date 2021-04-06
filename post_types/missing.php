@@ -93,24 +93,27 @@ function missingmeta()
       <tr>		
 				<th><label for="missing-date">Vermisst seit</label></th>
 				<td><input type="date" id="missing-date" name="missing-date" value="' . esc_attr($missingdate) . '" class="regular-text"></td>
-      </tr>
-      <tr>		
-      <th><label for="missing-location">Vermisst seit</label></th>
-      <td><input type="text" id="missing-location" name="missing-location" value="' . esc_attr($missinglocation) . '" class="regular-text"></td>
-    </tr>	
-    <tr>	
-    <th><label for="missing-specials">Vermisst seit</label></th>
-    <td><input type="text" id="missing-specials" name="missing-specials" value="' . esc_attr($missingspecials) . '" class="regular-text"></td>
-  </tr>	
-  <tr>	
-  <th><label for="missing-description">Vermisst seit</label></th>
-  <td><input type="text" id="missing-description" name="missing-description" value="' . esc_attr($missingdescription) . '" class="regular-text"></td>
-</tr>	
-<tr>	
-<th><label for="missing-email">Vermisst seit</label></th>
-<td><input type="email" id="missing-email" name="missing-email" value="' . esc_attr($missingemail) . '" class="regular-text"></td>
-</tr>	
-     
+          </tr>
+          <tr>		
+          <th><label for="missing-location">Vermisst seit</label></th>
+          <td><input type="text" id="missing-location" name="missing-location" value="' . esc_attr($missinglocation) . '" class="regular-text"></td>
+        </tr>	
+        <tr>	
+        <th><label for="missing-specials">Vermisst seit</label></th>
+        <td><input type="text" id="missing-specials" name="missing-specials" value="' . esc_attr($missingspecials) . '" class="regular-text"></td>
+        </tr>	
+        <tr>	
+        <th><label for="missing-description">Vermisst seit</label></th>
+        <td><input type="text" id="missing-description" name="missing-description" value="' . esc_attr($missingdescription) . '" class="regular-text"></td>
+      </tr>	
+      <tr>	
+      <th><label for="missing-email">Vermisst seit</label></th>
+      <td><input type="email" id="missing-email" name="missing-email" value="' . esc_attr($missingemail) . '" class="regular-text"></td>
+      </tr>	
+      <tr>	
+      <th><label for="missing-image">Vermisst seit</label></th>
+      <td><input type="file" id="missing-image" name="missing-image" value="' . esc_attr($missingimage) . '" class="regular-text"></td>
+      </tr>	  
 		</tbody>
 	</table>';
 }

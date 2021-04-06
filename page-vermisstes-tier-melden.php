@@ -62,7 +62,12 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && !empty($_POST['action']) &&  $_POST[
             <label for="missing-email">E-Mail</label>
             <br>
             <input type="email" name="missing-email" id="missing-email" value="" />
-
+            <br>
+            <br>
+            <br>
+            <label for="missing-image">Bild</label>
+            <br>
+            <input type="file" name="missing-image" id="missing-image" value="" />
             <p align="right"><input type="submit" value="Publish" tabindex="6" id="submit" name="submit" /></p>
 
             <input type="hidden" name="action" value="new_missing" />
