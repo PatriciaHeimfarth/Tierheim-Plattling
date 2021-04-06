@@ -82,7 +82,7 @@ function missingmeta()
   wp_nonce_field(basename(__FILE__), 'missing_fields');
 
   $missingname = get_post_meta($post->ID, 'missing-name', true);
- 
+
 
   echo '<table class="form-table">
     <tbody>
@@ -90,6 +90,26 @@ function missingmeta()
 				<th><label for="missing-name">Name</label></th>
 				<td><input type="text" id="missing-name" name="missing-name" value="' . esc_attr($missingname) . '" class="regular-text"></td>
       </tr>	
+      <tr>		
+				<th><label for="missing-date">Vermisst seit</label></th>
+				<td><input type="date" id="missing-date" name="missing-date" value="' . esc_attr($missingdate) . '" class="regular-text"></td>
+      </tr>
+      <tr>		
+      <th><label for="missing-location">Vermisst seit</label></th>
+      <td><input type="text" id="missing-location" name="missing-location" value="' . esc_attr($missinglocation) . '" class="regular-text"></td>
+    </tr>	
+    <tr>	
+    <th><label for="missing-specials">Vermisst seit</label></th>
+    <td><input type="text" id="missing-specials" name="missing-specials" value="' . esc_attr($missingspecials) . '" class="regular-text"></td>
+  </tr>	
+  <tr>	
+  <th><label for="missing-description">Vermisst seit</label></th>
+  <td><input type="text" id="missing-description" name="missing-description" value="' . esc_attr($missingdescription) . '" class="regular-text"></td>
+</tr>	
+<tr>	
+<th><label for="missing-email">Vermisst seit</label></th>
+<td><input type="email" id="missing-email" name="missing-email" value="' . esc_attr($missingemail) . '" class="regular-text"></td>
+</tr>	
      
 		</tbody>
 	</table>';
@@ -107,13 +127,13 @@ function wpt_save_missing_meta($post_id, $post)
   } else {
     delete_post_meta($post_id, 'missing-name');
   }
-  
-  
+
+
   return $post_id;
 
   $missing_meta['missing-name'] =  $_POST['missing-name'];
- 
- 
+
+
 
   foreach ($missing_meta as $key => $value) :
 
