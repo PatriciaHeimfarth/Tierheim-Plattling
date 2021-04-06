@@ -82,6 +82,12 @@ function missingmeta()
   wp_nonce_field(basename(__FILE__), 'missing_fields');
 
   $missingname = get_post_meta($post->ID, 'missing-name', true);
+  $missingdate = get_post_meta($post->ID, 'missing-date', true);
+  $missinglocation = get_post_meta($post->ID, 'missing-location', true);
+  $missingspecials = get_post_meta($post->ID, 'missing-specials', true);
+  $missingdescription = get_post_meta($post->ID, 'missing-description', true);
+  $missingemail = get_post_meta($post->ID, 'missing-email', true);
+  $missingimage = get_post_meta($post->ID, 'missing-image', true);
 
 
   echo '<table class="form-table">
@@ -130,11 +136,47 @@ function wpt_save_missing_meta($post_id, $post)
   } else {
     delete_post_meta($post_id, 'missing-name');
   }
+  if (isset($_POST['missing-date'])) {
+    update_post_meta($post_id, 'missing-date', sanitize_text_field($_POST['missing-date']));
+  } else {
+    delete_post_meta($post_id, 'missing-date');
+  }
+  if (isset($_POST['missing-location'])) {
+    update_post_meta($post_id, 'missing-location', sanitize_text_field($_POST['missing-location']));
+  } else {
+    delete_post_meta($post_id, 'missing-location');
+  }
+  if (isset($_POST['missing-specials'])) {
+    update_post_meta($post_id, 'missing-specials', sanitize_text_field($_POST['missing-specials']));
+  } else {
+    delete_post_meta($post_id, 'missing-specials');
+  }
+  if (isset($_POST['missing-description'])) {
+    update_post_meta($post_id, 'missing-description', sanitize_text_field($_POST['missing-description']));
+  } else {
+    delete_post_meta($post_id, 'missing-description');
+  }
+  if (isset($_POST['missing-email'])) {
+    update_post_meta($post_id, 'missing-email', sanitize_text_field($_POST['missing-email']));
+  } else {
+    delete_post_meta($post_id, 'missing-email');
+  }
+  if (isset($_POST['missing-image'])) {
+    update_post_meta($post_id, 'missing-image', sanitize_text_field($_POST['missing-image']));
+  } else {
+    delete_post_meta($post_id, 'missing-image');
+  }
 
 
   return $post_id;
 
   $missing_meta['missing-name'] =  $_POST['missing-name'];
+  $missing_meta['missing-date'] =  $_POST['missing-date'];
+  $missing_meta['missing-location'] =  $_POST['missing-location'];
+  $missing_meta['missing-specials'] =  $_POST['missing-specials'];
+  $missing_meta['missing-description'] =  $_POST['missing-description'];
+  $missing_meta['missing-email'] =  $_POST['missing-email'];
+  $missing_meta['missing-image'] =  $_POST['missing-image'];
 
 
 
