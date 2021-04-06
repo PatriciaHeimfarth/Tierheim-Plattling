@@ -18,6 +18,27 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && !empty($_POST['action']) &&  $_POST[
        
     );
     $pid = wp_insert_post($missing_animal);
+
+    if (!function_exists('wp_generate_attachment_metadata')){
+        require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+        require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+        require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+    }
+     if ($_FILES) {
+        foreach ($_FILES as $file => $array) {
+            if ($_FILES[$file]['error'] !== UPLOAD_ERR_OK) {
+                return "upload error : " . $_FILES[$file]['error'];
+            }
+            $attach_id = media_handle_upload( $file, $pid );
+        }   
+    }
+    if ($attach_id > 0){
+  
+        update_post_meta($pid,'_thumbnail_id',$attach_id);
+    }
+
+
+
     wp_redirect(get_permalink($pid));
     exit;
 }
@@ -27,7 +48,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && !empty($_POST['action']) &&  $_POST[
 
 <div class="main-wrap" role="main">
 
-    <form id="new_missing" name="new_missing" method="POST" action="">
+    <form id="new_missing" name="new_missing" method="POST" action="" enctype="multipart/form-data">
         <fieldset>
             <label for="missing-name">Name</label>
             <br>
@@ -65,9 +86,9 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && !empty($_POST['action']) &&  $_POST[
             <br>
             <br>
             <br>
-            <label for="missing-image">Bild</label>
+            <label for="thumbnail">Bild</label>
             <br>
-            <input type="file" name="missing-image" id="missing-image" value="" />
+            <input type="file" name="thumbnail" id="thumbnail" value="" />
             <p align="right"><input type="submit" value="Publish" tabindex="6" id="submit" name="submit" /></p>
 
             <input type="hidden" name="action" value="new_missing" />

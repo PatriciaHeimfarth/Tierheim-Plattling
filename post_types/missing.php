@@ -116,10 +116,7 @@ function missingmeta()
       <th><label for="missing-email">Vermisst seit</label></th>
       <td><input type="email" id="missing-email" name="missing-email" value="' . esc_attr($missingemail) . '" class="regular-text"></td>
       </tr>	
-      <tr>	
-      <th><label for="missing-image">Vermisst seit</label></th>
-      <td><input type="file" id="missing-image" name="missing-image" value="' . esc_attr($missingimage) . '" class="regular-text"></td>
-      </tr>	  
+     
 		</tbody>
 	</table>';
 }
@@ -161,10 +158,10 @@ function wpt_save_missing_meta($post_id, $post)
   } else {
     delete_post_meta($post_id, 'missing-email');
   }
-  if (isset($_POST['missing-image'])) {
-    update_post_meta($post_id, 'missing-image', sanitize_text_field($_POST['missing-image']));
+  if (isset($_POST['thumbnail'])) {
+    update_post_meta($post_id, 'thumbnail', sanitize_text_field($_POST['thumbnail']));
   } else {
-    delete_post_meta($post_id, 'missing-image');
+    delete_post_meta($post_id, 'thumbnail');
   }
 
 
@@ -176,7 +173,7 @@ function wpt_save_missing_meta($post_id, $post)
   $missing_meta['missing-specials'] =  $_POST['missing-specials'];
   $missing_meta['missing-description'] =  $_POST['missing-description'];
   $missing_meta['missing-email'] =  $_POST['missing-email'];
-  $missing_meta['missing-image'] =  $_POST['missing-image'];
+  $missing_meta['thumbnail'] =  $_POST['thumbnail'];
 
 
 
