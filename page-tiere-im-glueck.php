@@ -4,7 +4,7 @@ get_header();
 <div class="main-wrap" role="main">
     <section id="animal-listing">
         <?php $args = array(
-            'post_type' => 'person',
+            'post_type' => 'animal',
             'post_status' => 'publish',
             'posts_per_page' => 1000,
             'orderby' => 'title',
