@@ -66,7 +66,7 @@
         <a href="<?php echo get_bloginfo('url') ?>/spenden">Spenden</a>
         <a href="<?php echo get_bloginfo('url') ?>/wunschzettel">Wunschliste Amazon und mehr</a>
         <a href="<?php echo get_bloginfo('url') ?>/patenschaften">Patenschaften</a>
-        <a href="<?php echo get_bloginfo('url') ?>/ehrenamtliche">Ehrenamtlich helfen</a>
+        <a href="<?php echo get_bloginfo('url') ?>/ehrenamtlich-helfen">Ehrenamtlich helfen</a>
       </div>
     </div>
     <div class="dropdown">
