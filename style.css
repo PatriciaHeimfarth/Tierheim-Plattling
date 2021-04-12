@@ -177,7 +177,7 @@ a {
 }
 
 .infos-above-animal-image-div, .infos-below-animal-image-div {
-    background: green;
+    background: rgb(86, 92, 90);
     color: #f8f4f4;
     width: 350px;
     transition: .5s ease;
