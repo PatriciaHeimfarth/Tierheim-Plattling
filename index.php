@@ -4,13 +4,11 @@
         <h1 class="text-center">Aktuelles</h1>
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="text-center   container">
-
+                <div class="text-center container">
                     <article class="article-loop">
                         <div class="row">
                             <div class="col">
                                 <header>
-
                                     <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                                 </header>
                                 <?php
@@ -38,18 +36,26 @@
 
         <h1 class="text-center">Unser Tierheim</h1>
         <h1 class="text-center">Adoptieren und Helfen</h1>
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Unsere Hunde</h2>
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
-                    <div class="row">
-                        <div class="col">
-                            <button onclick="location.href='./hunde'">Zu den Hunden</button>
-                        </div>
-                    </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button onclick="location.href='./hunde'">Zu den Hunden</button>
+                </div>
+            </div>
+
+            </br>
+            </br>
+            </br>
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Unsere Katzen</h2>
@@ -61,6 +67,9 @@
                     </div>
                 </div>
             </div>
+            </br>
+            </br>
+            </br>
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Unsere Kleintiere</h2>
@@ -72,6 +81,9 @@
                     </div>
                 </div>
             </div>
+            </br>
+            </br>
+            </br>
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Erfolgreich vermittelt</h2>
@@ -83,6 +95,9 @@
                     </div>
                 </div>
             </div>
+            </br>
+            </br>
+            </br>
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Hinweise zur Vermittlung</h2>
@@ -94,6 +109,9 @@
                     </div>
                 </div>
             </div>
+            </br>
+            </br>
+            </br>
             <div class="row">
                 <div class="col">
                     <h2>Regenbogenland</h2>
@@ -106,7 +124,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
         <div class="donation-div">
             <h2 class="text-center">Helfen Sie uns!</h2>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .
