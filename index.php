@@ -2,30 +2,40 @@
 <main class="wrap">
     <section class="content-area content-full-width">
         <h1 class="text-center">Aktuelles</h1>
-        <div class="container">
-            <div class="row">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <article class="article-loop">
-                            <div class="col-sm">
+
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="text-center   container">
+
+                    <article class="article-loop">
+                        <div class="row">
+                            <div class="col">
                                 <header>
 
                                     <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                                 </header>
                                 <?php
-                                add_image_size('single-feature', 400, 300, true);
+                                add_image_size('single-feature', 800, 600, true);
                                 the_post_thumbnail('single-feature');
-
                                 ?>
                             </div>
-                        </article>
-                    <?php endwhile;
-                else : ?>
-                    <article>
-                        <p>Entschuldigung, hier steht noch nichts ...</p>
+                        </div>
                     </article>
-                <?php endif; ?>
-            </div>
-        </div>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                </div>
+            <?php endwhile;
+        else : ?>
+            <article>
+                <p>Entschuldigung, hier steht noch nichts ...</p>
+            </article>
+        <?php endif; ?>
+
         <h1>Unser Tierheim</h1>
         <h1>Adoptieren und Helfen</h1>
         <div class="container">
