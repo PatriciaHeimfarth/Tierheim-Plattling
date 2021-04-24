@@ -13,7 +13,7 @@
     <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
   </header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="<?php echo get_bloginfo('url') ?>/">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,24 +36,60 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Vermisst und Gefunden
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/fundtiere">Fundtiere</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/vermisste-tiere">Vermisste Tiere</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/vermisstes-tier-melden">Vermisstes Tier melden</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/datenschutz">Datenschutz</a>
           </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tierheim
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/der-verein">Der Verein</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/mitarbeiter">Unser Team</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/der-vorstand">Der Vorstand</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/ehrenamtliche">Unsere Ehrenamtlichen</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/gassigehen">Gassigehen</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/patenschaften">Patenschaften</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/jugendgruppe">Jugendgruppe</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Spenden und Helfen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/mitglied-werden">Mitglied werden</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/spenden">Spenden</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/wunschzettel">Wunschliste Amazon und mehr</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/patenschaften">Patenschaften</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/ehrenamtlich-helfen">Ehrenamtlich helfen</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kontakt
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/oeffnungszeiten">Öffnungszeiten</a>
+            <a class="dropdown-item" href="<?php echo get_bloginfo('url') ?>/anfahrtskizze">Anfahrtskizze</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo get_bloginfo('url') ?>/impressum">Impressum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo get_bloginfo('url') ?>/datenschutz">Datenschutzerklärung</a>
         </li>
       </ul>
     </div>
   </nav>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <br>
   <br>
   <br>
