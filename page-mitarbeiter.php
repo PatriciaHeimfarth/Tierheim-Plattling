@@ -13,29 +13,33 @@ get_header();
             'meta_value' => 'employee'
         );
 
-        $loop = new WP_Query($args);
+        $loop = new WP_Query($args); ?>
+        <div class="container">
+            <div class="row">
 
-        while ($loop->have_posts()) : $loop->the_post();
-            if (has_post_thumbnail()) {     ?>
-                <div class="animal-list-format-div">
-                    <div class="infos-above-animal-image-div"><?php the_title(); ?></div>
-                    <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('full'); ?>
-                    </a>
-                    <div class="infos-below-animal-image-div">
-                        <?php if (!empty(get_post_field('post_content'))) {
-                            echo get_post_field('post_content');
-                        }
-                        ?>
+                <?php while ($loop->have_posts()) : $loop->the_post();
+                    if (has_post_thumbnail()) {     ?>
+                        <div class="col-sm">
+                            <h2><?php the_title(); ?></h2>
+                            <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('medium'); ?>
+                            </a>
+                            <div>
+                                <?php if (!empty(get_post_field('post_content'))) {
+                                    echo get_post_field('post_content');
+                                }
+                                ?>
 
-                    </div>
-                </div>
-        <?php
-            }
+                            </div>
+                        </div>
+                <?php
+                    }
 
-        endwhile;
+                endwhile;
 
-        ?>
+                ?>
+            </div>
+        </div>
     </section>
 
 </div>
