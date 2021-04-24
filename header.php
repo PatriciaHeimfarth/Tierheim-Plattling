@@ -83,6 +83,11 @@
         <i class="fa fa-caret-down"></i>
       </button>
     </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href='<?php echo get_bloginfo('url') ?>/datenschutz'">Datenschutzerklärung
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </div>
   </div>
   <br>
   <br>
