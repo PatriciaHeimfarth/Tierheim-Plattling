@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Unsere Hunde</h2>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
                     <div class="row">
                         <div class="col">
                             <button onclick="location.href='./hunde'">Zu den Hunden</button>
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Unsere Katzen</h2>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
                     <div class="row">
                         <div class="col">
                             <button onclick="location.href='./katzen'">Zu den Katzen</button>
@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Unsere Kleintiere</h2>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
                     <div class="row">
                         <div class="col">
                             <button>Zu den Kleintieren</button>
@@ -75,7 +75,7 @@
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Erfolgreich vermittelt</h2>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
                     <div class="row">
                         <div class="col">
                             <button>Zu den Vermittlungen</button>
@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col">
                     <h2 class="text-center">Hinweise zur Vermittlung</h2>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
                     <div class="row">
                         <div class="col">
                             <button>Zu den Hinweisen</button>
@@ -97,7 +97,7 @@
             <div class="row">
                 <div class="col">
                     <h2>Regenbogenland</h2>
-                    <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
+                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
                     <div class="row">
                         <div class="col">
                             <button>Zum Regenbogenland</button>
