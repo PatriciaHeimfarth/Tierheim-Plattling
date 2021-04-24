@@ -32,12 +32,11 @@ get_header();
                 <?php while ($loop->have_posts()) : $loop->the_post();
                     if (has_post_thumbnail()) {     ?>
                         <div class="col-sm">
-                            <div><?php the_title(); ?></div>
+                            <h2><?php the_title(); ?></h2>
                             <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('medium'); ?>
                             </a>
                             <div>
-
                                 <?php
                                 $race = get_post_meta($post->ID, 'race', true);
                                 echo 'Rasse: ' . $race; ?>
@@ -61,8 +60,10 @@ get_header();
                                 <?php
                                 $castration = get_post_meta($post->ID, 'castration', true);
                                 echo 'Kastriert?: ' . $castration; ?>
-
                             </div>
+                            <br>
+                            <br>
+                            <br>
                         </div>
                 <?php
                     }
