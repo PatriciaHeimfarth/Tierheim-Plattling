@@ -36,44 +36,79 @@
             </article>
         <?php endif; ?>
 
-        <h1>Unser Tierheim</h1>
-        <h1>Adoptieren und Helfen</h1>
+        <h1 class="text-center">Unser Tierheim</h1>
+        <h1 class="text-center">Adoptieren und Helfen</h1>
         <div class="container">
             <div class="row">
-                <div class="col-sm">
-                    <h2>Unsere Hunde</h2>
+                <div class="col">
+                    <h2 class="text-center">Unsere Hunde</h2>
                     <img src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
-                    <button onclick="location.href='./hunde'">Zu den Hunden</button>
+                    <div class="row">
+                        <div class="col">
+                            <button onclick="location.href='./hunde'">Zu den Hunden</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <h2>Unsere Katzen</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Unsere Katzen</h2>
                     <img src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
-                    <button onclick="location.href='./katzen'">Zu den Katzen</button>
+                    <div class="row">
+                        <div class="col">
+                            <button onclick="location.href='./katzen'">Zu den Katzen</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <h2>Unsere Kleintiere</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Unsere Kleintiere</h2>
                     <img src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
-                    <button>Zu den Kleintieren</button>
+                    <div class="row">
+                        <div class="col">
+                            <button>Zu den Kleintieren</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <h2>Erfolgreich vermittelt</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Erfolgreich vermittelt</h2>
                     <img src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
-                    <button>Zu den Vermittlungen</button>
+                    <div class="row">
+                        <div class="col">
+                            <button>Zu den Vermittlungen</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <h2>Hinweise zur Vermittlung</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Hinweise zur Vermittlung</h2>
                     <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
-                    <button>Zu den Hinweisen</button>
+                    <div class="row">
+                        <div class="col">
+                            <button>Zu den Hinweisen</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
+            </div>
+            <div class="row">
+                <div class="col">
                     <h2>Regenbogenland</h2>
                     <img src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
-                    <button>Zum Regenbogenland</button>
+                    <div class="row">
+                        <div class="col">
+                            <button>Zum Regenbogenland</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
         <div class="donation-div">
-            <h2>Helfen Sie uns!</h2>
+            <h2 class="text-center">Helfen Sie uns!</h2>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .
         </div>
         <div class="infotext-div"></div>
