@@ -33,92 +33,93 @@
                 <p>Entschuldigung, hier steht noch nichts ...</p>
             </article>
         <?php endif; ?>
+        <div class="jumbotron">
+            <h1 class="text-center">Unser Tierheim</h1>
+            <h1 class="text-center">Adoptieren und Helfen</h1>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Unsere Hunde</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-success" onclick="location.href='./hunde'">Zu den Hunden</button>
+                    </div>
+                </div>
 
-        <h1 class="text-center">Unser Tierheim</h1>
-        <h1 class="text-center">Adoptieren und Helfen</h1>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Unsere Hunde</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund.jpeg" alt="Unsere Hunde">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-success" onclick="location.href='./hunde'">Zu den Hunden</button>
-                </div>
-            </div>
-
-            </br>
-            </br>
-            </br>
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Unsere Katzen</h2>
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-success" onclick="location.href='./katzen'">Zu den Katzen</button>
+                </br>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Unsere Katzen</h2>
+                        <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success" onclick="location.href='./katzen'">Zu den Katzen</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </br>
-            </br>
-            </br>
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Unsere Kleintiere</h2>
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-success" >Zu den Kleintieren</button>
+                </br>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Unsere Kleintiere</h2>
+                        <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success">Zu den Kleintieren</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </br>
-            </br>
-            </br>
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Erfolgreich vermittelt</h2>
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-success">Zu den Vermittlungen</button>
+                </br>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Erfolgreich vermittelt</h2>
+                        <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success">Zu den Vermittlungen</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </br>
-            </br>
-            </br>
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Hinweise zur Vermittlung</h2>
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-success">Zu den Hinweisen</button>
+                </br>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Hinweise zur Vermittlung</h2>
+                        <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success">Zu den Hinweisen</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </br>
-            </br>
-            </br>
-            <div class="row">
-                <div class="col">
-                    <h2>Regenbogenland</h2>
-                    <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-success">Zum Regenbogenland</button>
+                </br>
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col">
+                        <h2>Regenbogenland</h2>
+                        <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-success">Zum Regenbogenland</button>
+                            </div>
                         </div>
                     </div>
                 </div>
