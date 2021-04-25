@@ -6,67 +6,66 @@
         $character = get_post_meta($post->ID, 'character', true);
         $race = get_post_meta($post->ID, 'race', true);
         $in_shelter_since = get_post_meta($post->ID, 'in_shelter_since', true);
-        $castration = get_post_meta($post->ID, 'castration', true); 
+        $castration = get_post_meta($post->ID, 'castration', true);
         $birthdate = get_post_meta($post->ID, 'birthdate', true); ?>
         <div class="container" id="animal-header">
             <h1 class="animal-detail-title"><?php the_title(); ?></h1>
         </div>
-        <div role="main">
-           
-                <div class="col">
-                    <div>
-                        <?php if (has_post_thumbnail()) : ?>
-                            <img style="width:50%;" src="<?php the_post_thumbnail_url(); ?>" />
-                        <?php endif; ?>
-                    </div>
-                    <div>
-                        <table>
-                            <thead>
+        <div>
+            <div class="col">
+                <div>
+                    <?php if (has_post_thumbnail()) : ?>
+                        <img style="width:50%;" src="<?php the_post_thumbnail_url(); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div>
+                    <table>
+                        <thead>
 
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <?php echo "Rasse"; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $race; ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <?php echo "Geburtsdatum"; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $birthdate; ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <?php echo "Charakter"; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $character; ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <?php echo "Kastriert / Sterilisiert?"; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $castration; ?>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <?php echo "Im Tierheim seit "; ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $in_shelter_since; ?>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>             
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <?php echo "Rasse"; ?>
+                                </td>
+                                <td>
+                                    <?php echo $race; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo "Geburtsdatum"; ?>
+                                </td>
+                                <td>
+                                    <?php echo $birthdate; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo "Charakter"; ?>
+                                </td>
+                                <td>
+                                    <?php echo $character; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo "Kastriert / Sterilisiert?"; ?>
+                                </td>
+                                <td>
+                                    <?php echo $castration; ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo "Im Tierheim seit "; ?>
+                                </td>
+                                <td>
+                                    <?php echo $in_shelter_since; ?>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <h3>Beschreibung</h3>
                 <div class="animal-detail-content">
