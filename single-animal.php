@@ -8,15 +8,15 @@
         $in_shelter_since = get_post_meta($post->ID, 'in_shelter_since', true);
         $castration = get_post_meta($post->ID, 'castration', true); 
         $birthdate = get_post_meta($post->ID, 'birthdate', true); ?>
-        <div class="row column" id="animal-header">
+        <div class="container" id="animal-header">
             <h1 class="animal-detail-title"><?php the_title(); ?></h1>
         </div>
-        <div class="animal-detail-div" role="main">
-            <div class="entry-content">
-                <div class="row">
+        <div role="main">
+           
+                <div class="col">
                     <div>
                         <?php if (has_post_thumbnail()) : ?>
-                            <img class="animal-detail-image" src="<?php the_post_thumbnail_url('full'); ?>" />
+                            <img style="width:50%;" src="<?php the_post_thumbnail_url(); ?>" />
                         <?php endif; ?>
                     </div>
                     <div>
@@ -66,10 +66,7 @@
                                     </td>
                                 </tr>
                             </tbody>
-
-
-                        </table>
-                    </div>
+                        </table>             
                 </div>
                 <h3>Beschreibung</h3>
                 <div class="animal-detail-content">
