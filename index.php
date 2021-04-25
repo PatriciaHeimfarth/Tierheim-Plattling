@@ -13,7 +13,7 @@
                                 </header>
                                 <?php
                                 add_image_size('single-feature', 800, 600, true);
-                                the_post_thumbnail('single-feature');
+                                the_post_thumbnail('largegit st');
                                 ?>
                             </div>
                         </div>
