@@ -13,7 +13,7 @@
                                 </header>
                                 <?php
                                 add_image_size('single-feature', 800, 600, true);
-                                the_post_thumbnail('largegit st');
+                                the_post_thumbnail('large');
                                 ?>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button onclick="location.href='./hunde'">Zu den Hunden</button>
+                    <button type="button" class="btn btn-success" onclick="location.href='./hunde'">Zu den Hunden</button>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@
                     <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze.jpeg" alt="Unsere Katzen">
                     <div class="row">
                         <div class="col">
-                            <button onclick="location.href='./katzen'">Zu den Katzen</button>
+                            <button type="button" class="btn btn-success" onclick="location.href='./katzen'">Zu den Katzen</button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/kaninchen.jpeg" alt="Unsere Kleintiere">
                     <div class="row">
                         <div class="col">
-                            <button>Zu den Kleintieren</button>
+                            <button type="button" class="btn btn-success" >Zu den Kleintieren</button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/hund1.jpeg" alt="Unsere Vermittelten">
                     <div class="row">
                         <div class="col">
-                            <button>Zu den Vermittlungen</button>
+                            <button type="button" class="btn btn-success">Zu den Vermittlungen</button>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                     <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
                     <div class="row">
                         <div class="col">
-                            <button>Zu den Hinweisen</button>
+                            <button type="button" class="btn btn-success">Zu den Hinweisen</button>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                     <img style="width: 33%" class="img-thumbnail img-fluid" src="<?php echo get_template_directory_uri() ?>/images/katze1.jpeg" alt="Hinweise zur Vermittlung">
                     <div class="row">
                         <div class="col">
-                            <button>Zum Regenbogenland</button>
+                            <button type="button" class="btn btn-success">Zum Regenbogenland</button>
                         </div>
                     </div>
                 </div>
