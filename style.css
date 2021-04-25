@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 h1, h2 {
-    color: #3b9ac3;
+    color: darkgreen;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -16,6 +16,10 @@ h1, h2 {
 
 main {
     background-color: #f3f3f3;
+}
+
+.unser-tierheim{
+    background-color: yellowgreen;
 }
 
  
